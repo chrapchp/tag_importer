@@ -1,0 +1,673 @@
+<TWinSoftTags>
+<Tag Name="PC_233_OCA">
+<NewName>PC_233_OCA</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>1838</ModbusAddress>
+<Comment>CHAMBER 2 NUTRIENT 1 OCA STATE (C=1,A=2,O=0)</Comment>
+<InitalValue />
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 1\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="KX_126_OFAP">
+<NewName>KX_126_OFAP</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>1839</ModbusAddress>
+<Comment>CHAMBER 1A CO2 OFF AM/PM (1=PM)</Comment>
+<InitalValue />
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 1\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="KX_126_OFH">
+<NewName>KX_126_OFH</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>1840</ModbusAddress>
+<Comment>CHAMBER 1A CO2 OFF HR</Comment>
+<InitalValue />
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 1\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="KX_126_OFM">
+<NewName>KX_126_OFM</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>1841</ModbusAddress>
+<Comment>CHAMBER 1A CO2 OFF MIN</Comment>
+<InitalValue />
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 1\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="KX_126_ONAP">
+<NewName>KX_126_ONAP</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>1842</ModbusAddress>
+<Comment>CHAMBER 1A CO2 ON AM/PM (1=PM)</Comment>
+<InitalValue />
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 1\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="KX_126_ONH">
+<NewName>KX_126_ONH</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>1843</ModbusAddress>
+<Comment>CHAMBER 1A CO2 ON HR</Comment>
+<InitalValue />
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 1\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="KX_126_ONM">
+<NewName>KX_126_ONM</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>1844</ModbusAddress>
+<Comment>CHAMBER 1A CO2 ON MIN</Comment>
+<InitalValue />
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 1\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_233_O">
+<NewName>PC_233_O</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>1550</ModbusAddress>
+<Comment>CHAMBER 2 NUTRIENT 1 OPEN</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>CHAMBER 1\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_233_C">
+<NewName>PC_233_C</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>1551</ModbusAddress>
+<Comment>CHAMBER 2 NUTRIENT 1 CLOSED</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>CHAMBER 1\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_233_A">
+<NewName>PC_233_A</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>1552</ModbusAddress>
+<Comment>CHAMBER 2 NUTRIENT 1 AUTO</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>CHAMBER 1\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_2332_PERM">
+<NewName>PC_2332_PERM</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>1553</ModbusAddress>
+<Comment>CHAMBER 1 PERMISSIVE</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>CHAMBER 1\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_200_B1">
+<NewName>PC_200_B1</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>2511</ModbusAddress>
+<Comment>PID DESC BOOL1</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_200_B2">
+<NewName>PC_200_B2</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>2512</ModbusAddress>
+<Comment>PID DESC BOOL2</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_200_B3">
+<NewName>PC_200_B3</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>2513</ModbusAddress>
+<Comment>PID DESC BOOL3</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_200_B4">
+<NewName>PC_200_B4</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>2514</ModbusAddress>
+<Comment>PID DESC BOOL4</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_200_B5">
+<NewName>PC_200_B5</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>2515</ModbusAddress>
+<Comment>PID DESC BOOL5</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="HS_166_B1">
+<NewName>HS_166_B1</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>2516</ModbusAddress>
+<Comment>CHAMBER 1 TEMPERATURE DESC BOOL1</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="HS_166_B2">
+<NewName>HS_166_B2</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>2517</ModbusAddress>
+<Comment>CHAMBER 1 TEMPERATURE DESC BOOL2</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="HS_166_B3">
+<NewName>HS_166_B3</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>2518</ModbusAddress>
+<Comment>CHAMBER 1 TEMPERATURE DESC BOOL3</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="HS_166_B4">
+<NewName>HS_166_B4</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>2519</ModbusAddress>
+<Comment>CHAMBER 1 TEMPERATURE DESC BOOL4</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="HS_166_B5">
+<NewName>HS_166_B5</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>2520</ModbusAddress>
+<Comment>CHAMBER 1 TEMPERATURE DESC BOOL5</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="ALW_DD_KKK">
+<NewName>ALW_DD_KKK</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>241</ModbusAddress>
+<Comment>phD TEST KKK</Comment>
+<InitalValue />
+<Signed>True</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>GLOBALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="ALW_DD_KLM">
+<NewName>ALW_DD_KLM</NewName>
+<Address />
+<Format>FLOAT</Format>
+<ModbusAddress>234</ModbusAddress>
+<Comment>phD TEST KLM</Comment>
+<InitalValue />
+<Signed>True</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>GLOBALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="ALW_DD_FLT2">
+<NewName>ALW_DD_FLT2</NewName>
+<Address />
+<Format>FLOAT</Format>
+<ModbusAddress>236</ModbusAddress>
+<Comment>phD TEST FLT</Comment>
+<InitalValue />
+<Signed>True</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>GLOBALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="ALW_DD_FLT21">
+<NewName>ALW_DD_FLT21</NewName>
+<Address />
+<Format>FLOAT</Format>
+<ModbusAddress>238</ModbusAddress>
+<Comment>phD TEST FLT Hello world</Comment>
+<InitalValue />
+<Signed>True</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>GLOBALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="C11_PRIMARY_CC">
+<NewName>C11_PRIMARY_CC</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>570</ModbusAddress>
+<Comment>PRIMARY COMMUNICATION CYCLE COUNT</Comment>
+<InitalValue />
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>COMMUNICATION</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="C11_PRIMARY_ST">
+<NewName>C11_PRIMARY_ST</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>571</ModbusAddress>
+<Comment>PRIMARY COMMUNICATION STATUS </Comment>
+<InitalValue />
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>COMMUNICATION</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="C11_PRIMARY_CT">
+<NewName>C11_PRIMARY_CT</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>550</ModbusAddress>
+<Comment>PRIMARY COMMUNICATION TRIGGER</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>COMMUNICATION</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="C11_PRIMARY_CE">
+<NewName>C11_PRIMARY_CE</NewName>
+<Address />
+<Format>DIGITAL</Format>
+<ModbusAddress>551</ModbusAddress>
+<Comment>PRIMARY COMMUNICATION ERROR</Comment>
+<InitalValue />
+<Signed />
+<TextTagSize />
+<Minimum />
+<Maximum />
+<Resolution />
+<Group>COMMUNICATION</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_200_1">
+<NewName>PC_200_1</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2400</ModbusAddress>
+<Comment>PID DESC 1</Comment>
+<InitalValue>10</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_200_2">
+<NewName>PC_200_2</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2401</ModbusAddress>
+<Comment>PID DESC 2</Comment>
+<InitalValue>20</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_200_3">
+<NewName>PC_200_3</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2402</ModbusAddress>
+<Comment>PID DESC 3</Comment>
+<InitalValue>30</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_200_4">
+<NewName>PC_200_4</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2403</ModbusAddress>
+<Comment>PID DESC 4</Comment>
+<InitalValue>40</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_200_5">
+<NewName>PC_200_5</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2404</ModbusAddress>
+<Comment>PID DESC 5</Comment>
+<InitalValue>50</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_200_6">
+<NewName>PC_200_6</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2405</ModbusAddress>
+<Comment>PID DESC 6</Comment>
+<InitalValue>60</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_200_7">
+<NewName>PC_200_7</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2406</ModbusAddress>
+<Comment>PID DESC 7</Comment>
+<InitalValue>70</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="PC_200_8">
+<NewName>PC_200_8</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2407</ModbusAddress>
+<Comment>PID DESC 8</Comment>
+<InitalValue>80</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="HS_166_1">
+<NewName>HS_166_1</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2408</ModbusAddress>
+<Comment>CHAMBER 1 TEMPERATURE DESC 1</Comment>
+<InitalValue>10</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="HS_166_2">
+<NewName>HS_166_2</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2409</ModbusAddress>
+<Comment>CHAMBER 1 TEMPERATURE DESC 2</Comment>
+<InitalValue>20</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="HS_166_3">
+<NewName>HS_166_3</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2410</ModbusAddress>
+<Comment>CHAMBER 1 TEMPERATURE DESC 3</Comment>
+<InitalValue>30</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="HS_166_4">
+<NewName>HS_166_4</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2411</ModbusAddress>
+<Comment>CHAMBER 1 TEMPERATURE DESC 4</Comment>
+<InitalValue>40</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="HS_166_5">
+<NewName>HS_166_5</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2412</ModbusAddress>
+<Comment>CHAMBER 1 TEMPERATURE DESC 5</Comment>
+<InitalValue>50</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="HS_166_6">
+<NewName>HS_166_6</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2413</ModbusAddress>
+<Comment>CHAMBER 1 TEMPERATURE DESC 6</Comment>
+<InitalValue>60</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="HS_166_7">
+<NewName>HS_166_7</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2414</ModbusAddress>
+<Comment>CHAMBER 1 TEMPERATURE DESC 7</Comment>
+<InitalValue>70</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="HS_166_8">
+<NewName>HS_166_8</NewName>
+<Address />
+<Format>16BITS</Format>
+<ModbusAddress>2415</ModbusAddress>
+<Comment>CHAMBER 1 TEMPERATURE DESC 8</Comment>
+<InitalValue>80</InitalValue>
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>CHAMBER 2\LOCALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="ALW_DD_FLT">
+<NewName>ALW_DD_FLT</NewName>
+<Address />
+<Format>32BITS</Format>
+<ModbusAddress>350</ModbusAddress>
+<Comment>phD DICOMMENT1234567890123456789012345678901234567</Comment>
+<InitalValue />
+<Signed>True</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>GLOBALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="ALW_DD_FLT4">
+<NewName>ALW_DD_FLT4</NewName>
+<Address />
+<Format>32BITS</Format>
+<ModbusAddress>450</ModbusAddress>
+<Comment>phD TEST FLT</Comment>
+<InitalValue />
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>GLOBALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag>
+<Tag Name="ALW_DD_FLT23">
+<NewName>ALW_DD_FLT23</NewName>
+<Address />
+<Format>32BITS</Format>
+<ModbusAddress>452</ModbusAddress>
+<Comment>phD TEST FLT</Comment>
+<InitalValue />
+<Signed>False</Signed>
+<TextTagSize />
+<Minimum>0</Minimum>
+<Maximum>1000</Maximum>
+<Resolution></Resolution>
+<Group>GLOBALS</Group>
+<Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation><WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed><DisplayFormat>DECIMAL</DisplayFormat></Tag></TWinSoftTags>
