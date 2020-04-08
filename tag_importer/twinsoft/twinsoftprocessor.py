@@ -59,8 +59,9 @@ class TwinsoftError(Exception):
     TE_TAG_NAME_TOO_LONG = -108
     TE_TAG_DESC_TOO_LONG = -109
     TE_DUPLICATE_BOOL_ADDR = -110
-    TE_DUPLICATE_ANALOG_ADDR = -110
-    TE_DUPLICATE_TAG_NAME = -111
+    TE_DUPLICATE_ANALOG_ADDR = -112
+    TE_DUPLICATE_TAG_NAME = -113
+    TE_MEMORY_MAP_CONFLICT = -113
 
     def __init__(self, message, errors):
         super().__init__(message)
@@ -134,8 +135,8 @@ class TwinsoftProcessor:
                     # else:
                     tag_record[tag_details.tag] = tag_details.text
                     # print(tag_details.tag, tag_details.text, tag_details.attrib)
-                #print("TAG REGCORD: {} {} ".format(cnt, tag_record))
-                #cnt += 1
+                # print("TAG REGCORD: {} {} ".format(cnt, tag_record))
+                # cnt += 1
                 tag_records.append(tag_record)
 
             if len(tag_records) == 0:
@@ -145,14 +146,14 @@ class TwinsoftProcessor:
                 # return pd.DataFrame(tag_records).sort_values(by=['Group', 'ModbusAddress']).astype({'Signed': 'bool'},copy=True)
                 x = pd.DataFrame(tag_records).sort_values(
                     by=['Group', 'ModbusAddress'])
-                #print( 'here" {}'.format( x[x['Signed'].notnull()==False][['Signed','Tag']]))
+                # print( 'here" {}'.format( x[x['Signed'].notnull()==False][['Signed','Tag']]))
                 # x[x['Signed'].notnull()==False]['Signed2']=False
                 x["Signed"].fillna("False", inplace=True)
-                #x.Signed = x.Signed == 'True'
-                #x['Signed'] = 'Peter'
+                # x.Signed = x.Signed == 'True'
+                # x['Signed'] = 'Peter'
                 # x.to_clipboard()
                 # force Empty Signed column to False
-                #x = x.astype({'Signed': 'bool'},copy=True)
+                # x = x.astype({'Signed': 'bool'},copy=True)
                 return x
         except FileNotFoundError:
             raise TwinsoftError("No such Twinsoft export file or directory " +
@@ -185,7 +186,7 @@ class TwinsoftProcessor:
         dups = subset_df.duplicated(subset=['TAG_NAME'])
         if dups.any():
             raise TwinsoftError('Duplicate TAG_NAME defined in Sheet ' + ExcelProcessor.EXCEL_TAG_SHEET + ' in file ' + self.xl_processor.xl_file_name + '\n' + str(subset_df.loc[dups][[
-                                'TAG_NAME', 'CLASS']]) + '\n', TwinsoftError.TE_DUPLICATE_TAG_NAME)
+                                'CLASS', 'TAG_NAME']]) + '\n', TwinsoftError.TE_DUPLICATE_TAG_NAME)
 
         # check if a duplicate tag name exists in TAG_PATTERN sheet for Excel file with class GENERATE
         subset_df = self.__xl_tags_df[self.__xl_tags_df['CLASS'] == 'GENERATE'].copy(
@@ -194,12 +195,47 @@ class TwinsoftProcessor:
         dups = subset_df.duplicated(subset=['TAG_PATTERN'])
         if dups.any():
             raise TwinsoftError('Duplicate TAG_NATAG_PATTERNME defined in Sheet ' + ExcelProcessor.EXCEL_TAG_SHEET + ' in file ' + self.xl_processor.xl_file_name + '\n' + str(subset_df.loc[dups][[
-                                'TAG_PATTERN', 'CLASS']]) + '\n', TwinsoftError.TE_DUPLICATE_TAG_NAME)
+                                'CLASS', 'TAG_PATTERN']]) + '\n', TwinsoftError.TE_DUPLICATE_TAG_NAME)
 
     def load_and_validate_memory_map(self):
         self.__logger.info("Loading Memory Map...")
+
         self.__xl_memory_map_df = self.xl_processor.memory_map_df
-        
+        df = self.__xl_memory_map_df.copy()
+        # compute end address based on format type
+        df['END_ADDRESS'] = np.where(df['FORMAT'].isin(['FLOAT', 'INT32', 'UINT32']),
+                                     df['START_ADDRESS'] + df['LENGTH'] * 2 - 2, df['START_ADDRESS'] + df['LENGTH'] - 1)
+
+        df['IS_BOOL'] = df['FORMAT'] == 'BOOL'
+        grp = df.groupby(['IS_BOOL'])
+
+        # df['overlap'] = (grp.apply(lambda x: ((x['START_ADDRESS'] <= x['END_ADDRESS'].shift(periods=-1, fill_value=0))
+        #                                      & (x['START_ADDRESS'].shift(periods=-1, fill_value=0) <= x['END_ADDRESS'])))).reset_index(level=0, drop=True)
+
+        # could not get a vectorized way to generate conflict map so ended up with iterating rows
+        # look for overlaps in start/end addresses for BOOL and Non-BOOL groups
+
+        err_df = pd.DataFrame(columns=['ORIGIN_GROUP', 'ORIGIN_FORMAT', 'ORIGIN_START_ADDRESS', 'ORIGIN_END_ADDRESS',
+                                       'CONFLICT_GROUP', 'CONFLICT_FORMAT', 'CONFLICT_START_ADDR', 'CONFLICT_END_ADDR', ])
+        for group_name, df_group in grp:
+            row_iterator = df_group.iterrows()
+            for i, row in row_iterator:
+                if i != df.shape[0]-1:
+                    df2 = df.shift(-1*(i+1)).copy()
+                    df2.dropna(inplace=True)
+                    for i, nrow in df2.iterrows():
+                        if nrow['IS_BOOL'] == group_name:
+                            # print("row['START_ADDRESS'] >= nrow['END_ADDRESS']:{}{} nrow['START_ADDRESS'] <= row['END_ADDRESS']{}{}".format(row['START_ADDRESS'],nrow['END_ADDRESS'],nrow['START_ADDRESS'],row['END_ADDRESS']))
+                            # print('arg1 {}<={} arg3 {}<={}'.format(row['START_ADDRESS'],nrow['END_ADDRESS'],nrow['START_ADDRESS'],row['END_ADDRESS'] ))
+                            if (row['START_ADDRESS'] <= nrow['END_ADDRESS']) & (nrow['START_ADDRESS'] <= row['END_ADDRESS']):
+                                err_df = err_df.append({'ORIGIN_GROUP': row['GROUP'], 'ORIGIN_FORMAT': row['FORMAT'], 'ORIGIN_START_ADDRESS': row['START_ADDRESS'],
+                                                        'ORIGIN_END_ADDRESS': row['END_ADDRESS'],
+                                                        'CONFLICT_GROUP': nrow['GROUP'], 'CONFLICT_FORMAT': nrow['FORMAT'], 'CONFLICT_START_ADDR': int(nrow[
+                                                            'START_ADDRESS']), 'CONFLICT_END_ADDR': int(nrow['END_ADDRESS'])
+                                                        }, ignore_index=True)
+        if err_df.shape[0] > 0:
+            raise TwinsoftError("Memory Map Conflict:\n{}\n".format(
+                err_df), TwinsoftError.TE_MEMORY_MAP_CONFLICT)
 
     def load_data(self):
 
@@ -214,7 +250,6 @@ class TwinsoftProcessor:
 
         """
 
-        self.__twinsoft_tags_df.to_csv('ex.csv')
         x = self.__twinsoft_tags_df.groupby(['Group', 'Format', 'Signed']).agg({
             'ModbusAddress': ['min', 'max']})
         x.columns = ['MB_MIN', 'MB_MAX']
@@ -262,7 +297,7 @@ class TwinsoftProcessor:
         return ret
 
     def __to_twinsoft_xml(self, gen_df):
-        #to_export = pd.DataFrame().reindex_like(self.__twinsoft_tags_df)
+        # to_export = pd.DataFrame().reindex_like(self.__twinsoft_tags_df)
 
         with open(self.__write_xml_file, 'w') as xmlFile:
             xmlFile.write('<TWinSoftTags>\n')
@@ -323,6 +358,10 @@ class TwinsoftProcessor:
         # print(gen_tags_merged.columns)
         gen_tags_merged['HAS_DATA'] = gen_tags_merged['Group'].isna() == False
 
+        if (gen_tags_merged['HAS_DATA'] == True).shape[0] > 0:
+            self.__logger.warning(" Twinsoft Tag Export File {} containts tag definitions. No checks for addressing conflict are made if tags don't exist in folder defined in the memory map. May run into Twinsoft import errors.".format(
+                self.__twinsoft_tag_export_file))
+
         # count up tags by grouping existing folders in twinsoft then
         #               Group   Format Signed MB_MIN  MB_MAX             TAG TS_FORMAT  TS_SIGNED  START_ADDRESS  LENGTH            FOLDER  FORMAT  CALC_ADDRESS  CALC_INC  HAS_DATA
         # 0   CHAMBER 1\LOCALS   16BITS  False   1700  1837.0      XY_110_OCA    16BITS      False           1400     100  CHAMBER 1\LOCALS  UINT16          1838         1      True
@@ -337,14 +376,14 @@ class TwinsoftProcessor:
 
         gen_tags_merged.loc[(gen_tags_merged['FORMAT'].isin(
             ['FLOAT', 'INT32', 'UINT32'])), 'CALC_ADDRESS'] = gen_tags_merged['CALC_ADDRESS'] * 2
-        #gen_tags_merged['deleteme'] = gen_tags_merged['CALC_ADDRESS']
+        # gen_tags_merged['deleteme'] = gen_tags_merged['CALC_ADDRESS']
         gen_tags_merged['CALC_INC'] = 1
         gen_tags_merged.loc[(gen_tags_merged['FORMAT'].isin(
             ['FLOAT', 'INT32', 'UINT32'])), 'CALC_INC'] = 2
         gen_tags_merged['CALC_ADDRESS'] = gen_tags_merged['CALC_ADDRESS'] + \
             np.where(gen_tags_merged['HAS_DATA'] == True,
                      gen_tags_merged['MB_MAX'] + gen_tags_merged['CALC_INC'], gen_tags_merged['START_ADDRESS'])
-        #np.where(gen_tags_merged['TS_FORMAT'] in ['FLOAT', 'INT32', 'UINT32'], 2, 1)
+        # np.where(gen_tags_merged['TS_FORMAT'] in ['FLOAT', 'INT32', 'UINT32'], 2, 1)
 
         gen_tags_merged['CALC_ADDRESS'] = gen_tags_merged['CALC_ADDRESS'].astype(
             int)
@@ -361,14 +400,8 @@ class TwinsoftProcessor:
         self.load_data()
 
         self.__logger.info("Generatings Tags for pattern <" + pattern + ">...")
-
-        if pattern == '*':
-            pattern_df = self.__xl_tags_df[(
-                self.__xl_tags_df.CLASS == 'GENERATE')]
-
-        else:
-            pattern_df = self.__xl_tags_df[(self.__xl_tags_df.CLASS == 'GENERATE')
-                                           & (self.__xl_tags_df.TAG_PATTERN == pattern)]
+        pattern_df = self.__xl_tags_df[(self.__xl_tags_df.CLASS == 'GENERATE') & (
+            self.__xl_tags_df.TAG_PATTERN.str.contains(pattern, regex=True))]
 
         # join tag list and templates and generate which will contain tag_pattern and suffix
         pattern_df = pd.merge(
@@ -392,7 +425,7 @@ class TwinsoftProcessor:
                                 " in file " + self.xl_processor.xl_file_name, TwinsoftError.TE_PATTERN_NOT_FOUND)
         # for each entry we need to get the adress ranges by group and format
         pattern_df = pd.merge(pattern_df, self.__xl_memory_map_df, left_on=[
-                              'GROUP', 'TYPE_y'], right_on=['GROUP', 'FORMAT'], how='left')
+            'GROUP', 'TYPE_y'], right_on=['GROUP', 'FORMAT'], how='left')
 
         # check for missing groups in TAGS tab not found in MEMORY_MAP tav
         errs = list(
@@ -408,9 +441,9 @@ class TwinsoftProcessor:
                            'INITIAL_VALUE_y': 'INITIAL_VALUE'}, axis=1, inplace=True)
 
         exported_merged = pd.merge(self.__twinsoft_tags_df, pattern_df, left_on=[
-                                   'Tag'], right_on=['TAG'])
+            'Tag'], right_on=['TAG'])
 
-        #self.__logger.debug("{}() - exported_merged-dataframe\n{}".format(self.generate_tags.__name__,exported_merged[['Tag','TAG']]))
+        # self.__logger.debug("{}() - exported_merged-dataframe\n{}".format(self.generate_tags.__name__,exported_merged[['Tag','TAG']]))
         errs = list(exported_merged['Tag'])
         if len(errs):
             raise TwinsoftError('Generated tags ' + str(errs) + ' for pattern ' + pattern +
@@ -418,20 +451,28 @@ class TwinsoftProcessor:
 
         self.__generate_addressing(pattern_df)
 
-    def process_communication(self):
-        self.__logger.info("Loading Template...")
-        template = self.xl_processor.template_df
-        self.__logger.info("Loading Tags...")
-        tags = self.xl_processor.tags_df
-        self.__logger.info("Loading Memory Map...")
-        memory_map = self.xl_processor.memory_map_df
+    def clone(self, tag_filter, group_filter, dest, address_offset, loop_no, replace_pattern):
+        self.load_data()
+        df = self.__twinsoft_tags_df
 
-        print(coms)
-        # raise TwinsoftError("test",1)
+        clone_df = df[(df['Tag'].str.contains(tag_filter, regex=True)) & (
+            df['Group'].str.contains(group_filter, regex=True))].copy()
+        clone_df['Address'] = None
 
-    def process_tags(self):
-        self.__logger.info("got here")
-        x = self.xl_processor.tags_df
+        clone_df['InitalValue'] = np.where(clone_df['InitalValue'].isnull(), TwinsoftProcessor.TW_IGNORE_DATA, clone_df['InitalValue'])
+        clone_df = clone_df.astype({'ModbusAddress': int}, copy=True)
+        # print(clone_df.dtypes)
+        clone_df['ModbusAddress'] += address_offset
+        clone_df['Tag'] = clone_df['Tag'].str.replace(pat=replace_pattern, repl=loop_no, n=1, regex=True)
+        clone_df['NewName'] = clone_df['NewName'].str.replace(pat=replace_pattern, repl=loop_no, n=1, regex=True)
+        if dest is not None:
+            clone_df['Group'] = dest
+        else:
+            clone_df['Group'] = clone_df['Group'].str.replace(pat=replace_pattern, repl=loop_no,  regex=True)
+        clone_df['Comment'] = clone_df['Comment'].str.replace(pat=replace_pattern, repl=loop_no, n=1, regex=True)
+        
+        clone_df.rename({'Tag': 'TAG', 'Comment': 'DESCRIPTION', 'Format': 'TS_FORMAT',
+                           'Signed': 'TS_SIGNED','InitalValue': 'INITIAL_VALUE','Group': 'FOLDER','ModbusAddress': 'CALC_ADDRESS'}, axis=1, inplace=True)
+        print(clone_df[['TAG','DESCRIPTION','CALC_ADDRESS','FOLDER']])
+        self.__to_twinsoft_xml(clone_df)
 
-        self.__logger.info(x)
-        # raise TwinsoftError("test",1)
