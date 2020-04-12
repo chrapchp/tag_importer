@@ -19,6 +19,8 @@ class ExcelProcessor:
     EXCEL_TAG_SHEET = 'TAGS'
     EXCEL_MEMORY_MAP_SHEET = 'MEMORY_MAP'
     EXCEL_TEMPLATE = 'TEMPLATE'
+    EXCEL_REMOTE_TAGS = 'REMOTE_TAGS'
+    EXCEL_REMOTE_DEVICES = 'REMOTE_DEVICES'    
 
     def __init__(self, xl_file_name):
 
@@ -27,6 +29,9 @@ class ExcelProcessor:
         self.__tags_df = None
         self.__template_df = None
         self.__memory_map_df = None
+        self.__remote_devices_df = None
+        self.__remote_tags_df = None
+
 
     def __open_tab(self, tab_name, empty_tab_allowed=False, empty_cells_allowed=True):
         try:
@@ -65,3 +70,21 @@ class ExcelProcessor:
                 ExcelProcessor.EXCEL_MEMORY_MAP_SHEET, empty_cells_allowed=False)
 
         return self.__memory_map_df
+
+    @property
+    def remote_devices_df(self):
+        if self.__remote_devices_df is None:
+            self.__remote_devices_df = self.__open_tab(
+                ExcelProcessor.EXCEL_REMOTE_DEVICES, empty_cells_allowed=False)
+
+        return self.__remote_devices_df
+
+
+    @property
+    def remote_tags_df(self):
+        if self.__remote_tags_df is None:
+            self.__remote_tags_df = self.__open_tab(
+                ExcelProcessor.EXCEL_REMOTE_TAGS, empty_cells_allowed=False)
+
+        return self.__remote_tags_df        
+

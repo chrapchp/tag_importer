@@ -43,8 +43,9 @@ def main(ctx, excel, xmlin, xmlout, verbose):
 
 @main.command()
 @click.option('--pattern', required=True, help='Generate Tags for a given TAG_PATTERN defined in excel TAGS tab')
+@click.option('--tag_type', required=False, help='local | remote', default='local')
 @click.pass_context
-def generate(ctx, pattern):
+def generate(ctx, pattern,tag_type):
     '''
     Generate tags using pattern defined in XL
     '''
@@ -57,9 +58,14 @@ def generate(ctx, pattern):
             '\'^[A-Z]\d{2}_.+\'     -> Start with 1 Capital letter followed by 2 digits and underscore, then 1 or more characters e.g. C12_PRIMARY*')
         logger.info(
             '\'^C11.+\'             -> Start C11 followed by 1 or more characters e.g C11_LS_100')
-    else:
+    elif tag_type=='local':
         ctx.obj['twinsoft_processor'].generate_tags(pattern)
-        logger.info('Generate operation completed.')
+        logger.info('Generate tags operation completed.')
+    elif tag_type=='remote':
+        ctx.obj['twinsoft_processor'].generate_remote_tags(pattern)
+        logger.info('Generate remote tags operation completed.')
+    else:
+        logger.error('Invalid tag_type: ' + tag_type + ' for generate command. local | remote')
 
 
 @main.command()

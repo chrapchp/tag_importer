@@ -53,15 +53,17 @@ class TwinsoftError(Exception):
     TE_XML_ROOT_KEY_NOT_FOUND = -103
     TE_XML_ATTRIBUTE_KEY_NOT_FOUND = -104
     TE_TEMPLATE_NOT_FOUND = -105
-    TE_GROUP_NOT_FOUND = -105
-    TE_TAG_IN_EXPORT_FILE_EXIST = -106
-    TE_TAGS_EXIST = -107
-    TE_TAG_NAME_TOO_LONG = -108
-    TE_TAG_DESC_TOO_LONG = -109
-    TE_DUPLICATE_BOOL_ADDR = -110
+    TE_GROUP_NOT_FOUND = -106
+    TE_TAG_IN_EXPORT_FILE_EXIST = -107
+    TE_TAGS_EXIST = -108
+    TE_TAG_NAME_TOO_LONG = -109
+    TE_TAG_DESC_TOO_LONG = -110
+    TE_DUPLICATE_BOOL_ADDR = -111
     TE_DUPLICATE_ANALOG_ADDR = -112
     TE_DUPLICATE_TAG_NAME = -113
-    TE_MEMORY_MAP_CONFLICT = -113
+    TE_MEMORY_MAP_CONFLICT = -114
+    TE_GROUP_EMPTY = -115
+    TE_DOUBLE_UNDERSCORES = -116
 
     def __init__(self, message, errors):
         super().__init__(message)
@@ -249,14 +251,20 @@ class TwinsoftProcessor:
         """
 
         """
+        if self.__twinsoft_tags_df['Group'].isnull().any():
+            raise TwinsoftError(
+                "One or more tags in Twinsoft are not part of group. Tags Must Belong to a GROUP for processing", TwinsoftError.TE_GROUP_EMPTY)
 
         x = self.__twinsoft_tags_df.groupby(['Group', 'Format', 'Signed']).agg({
             'ModbusAddress': ['min', 'max']})
         x.columns = ['MB_MIN', 'MB_MAX']
 
         x = x.reset_index()
+
         # one of the ways to get the merge to work with a TRUE/FALSE. Otherwise merge does not return correct value not both excel and xml signed are bool types
         # rather than object bool
+        # print(self.__twinsoft_tags_df)
+
         x['Signed'] = x['Signed'] == 'True'
         x = x.astype({'Signed': 'bool', 'MB_MAX': int}, copy=True)
         self.__logger.debug("{}()\n{}".format(
@@ -307,6 +315,10 @@ class TwinsoftProcessor:
 
     def __validate_gen_df(self, gen_df):
 
+        t = gen_df.loc[(gen_df['TAG'].str.contains('.+__.+', regex=True))]
+        if t.shape[0] > 0:
+            raise TwinsoftError('\nGenerated Tag Names: \n' + str(list(
+                t['TAG'])) + '\n contains two consecutive underscores (__). Twinsoft will not import them. \nMost likely a GENERATE entry with a TAG_PATTERN defined with _* and the template SUFFIX has _X ', TwinsoftError.TE_DOUBLE_UNDERSCORES)
         # check if any of the generated tag names > MAX permitted
         t = gen_df.loc[(gen_df['TAG'].str.len() >
                         TwinsoftProcessor.TW_MAX_TAG_LEN)]
@@ -396,6 +408,8 @@ class TwinsoftProcessor:
         self.__validate_gen_df(gen_tags_merged)
         self.__to_twinsoft_xml(gen_tags_merged)
 
+    def generate_remote_tags(self, pattern):
+        print("TODO")
     def generate_tags(self, pattern):
         self.load_data()
 
@@ -410,6 +424,7 @@ class TwinsoftProcessor:
         # check if any templates are not found and abort process if any entry does not line up
         errs = list(pattern_df[pattern_df['SUFFIX'].isna()]
                     ['TEMPLATE'].unique())
+            
         if len(errs):
             raise TwinsoftError('TEMPLATES ' + str(errs) + ' defined in sheet ' + ExcelProcessor.EXCEL_TAG_SHEET + ' not found under ' +
                                 ExcelProcessor.EXCEL_TEMPLATE + ' sheet for file ' + self.xl_processor.xl_file_name, TwinsoftError.TE_TEMPLATE_NOT_FOUND)
@@ -427,12 +442,11 @@ class TwinsoftProcessor:
         pattern_df = pd.merge(pattern_df, self.__xl_memory_map_df, left_on=[
             'GROUP', 'TYPE_y'], right_on=['GROUP', 'FORMAT'], how='left')
 
-        # check for missing groups in TAGS tab not found in MEMORY_MAP tav
-        errs = list(
-            pattern_df[pattern_df['FORMAT_y'].isna()]['GROUP'].unique())
-        if len(errs):
-            raise TwinsoftError('GROUP column entries ' + str(errs) + ' defined under sheet ' + ExcelProcessor.EXCEL_TAG_SHEET + ' not found in ' +
-                                ExcelProcessor.EXCEL_MEMORY_MAP_SHEET + ' sheet for file ' + self.xl_processor.xl_file_name, TwinsoftError.TE_GROUP_NOT_FOUND)
+  
+        errs = pattern_df[pattern_df['FORMAT_y'].isna()][['GROUP','NEW_TAG','TYPE_y']]
+        
+        if errs.shape[0]>0:
+            raise TwinsoftError( "GROUP not found in memory map. \n{} \nPossibly a TYPE in the TEMPLATE does not exist for a GROUP in the MEMORY_MAP.\n".format(errs)  , TwinsoftError.TE_GROUP_NOT_FOUND)
 
         # clean up headers
         pattern_df.drop(['CLASS', 'TAG_NAME', 'TAG_PATTERN', 'DESCRIPTION_x', 'TEMPLATE', 'GROUP', 'SUFFIX', 'TYPE_y',
@@ -459,20 +473,24 @@ class TwinsoftProcessor:
             df['Group'].str.contains(group_filter, regex=True))].copy()
         clone_df['Address'] = None
 
-        clone_df['InitalValue'] = np.where(clone_df['InitalValue'].isnull(), TwinsoftProcessor.TW_IGNORE_DATA, clone_df['InitalValue'])
+        clone_df['InitalValue'] = np.where(clone_df['InitalValue'].isnull(
+        ), TwinsoftProcessor.TW_IGNORE_DATA, clone_df['InitalValue'])
         clone_df = clone_df.astype({'ModbusAddress': int}, copy=True)
         # print(clone_df.dtypes)
         clone_df['ModbusAddress'] += address_offset
-        clone_df['Tag'] = clone_df['Tag'].str.replace(pat=replace_pattern, repl=loop_no, n=1, regex=True)
-        clone_df['NewName'] = clone_df['NewName'].str.replace(pat=replace_pattern, repl=loop_no, n=1, regex=True)
+        clone_df['Tag'] = clone_df['Tag'].str.replace(
+            pat=replace_pattern, repl=loop_no, n=1, regex=True)
+        clone_df['NewName'] = clone_df['NewName'].str.replace(
+            pat=replace_pattern, repl=loop_no, n=1, regex=True)
         if dest is not None:
             clone_df['Group'] = dest
         else:
-            clone_df['Group'] = clone_df['Group'].str.replace(pat=replace_pattern, repl=loop_no,  regex=True)
-        clone_df['Comment'] = clone_df['Comment'].str.replace(pat=replace_pattern, repl=loop_no, n=1, regex=True)
-        
-        clone_df.rename({'Tag': 'TAG', 'Comment': 'DESCRIPTION', 'Format': 'TS_FORMAT',
-                           'Signed': 'TS_SIGNED','InitalValue': 'INITIAL_VALUE','Group': 'FOLDER','ModbusAddress': 'CALC_ADDRESS'}, axis=1, inplace=True)
-        print(clone_df[['TAG','DESCRIPTION','CALC_ADDRESS','FOLDER']])
-        self.__to_twinsoft_xml(clone_df)
+            clone_df['Group'] = clone_df['Group'].str.replace(
+                pat=replace_pattern, repl=loop_no,  regex=True)
+        clone_df['Comment'] = clone_df['Comment'].str.replace(
+            pat=replace_pattern, repl=loop_no, n=1, regex=True)
 
+        clone_df.rename({'Tag': 'TAG', 'Comment': 'DESCRIPTION', 'Format': 'TS_FORMAT',
+                         'Signed': 'TS_SIGNED', 'InitalValue': 'INITIAL_VALUE', 'Group': 'FOLDER', 'ModbusAddress': 'CALC_ADDRESS'}, axis=1, inplace=True)
+        # print(clone_df[['TAG','DESCRIPTION','CALC_ADDRESS','FOLDER']])
+        self.__to_twinsoft_xml(clone_df)
