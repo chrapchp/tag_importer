@@ -63,7 +63,7 @@ def generate(ctx, pattern,tag_type):
         logger.info('Generate tags operation completed.')
     elif tag_type=='remote':
         ctx.obj['twinsoft_processor'].generate_remote_tags(pattern)
-        logger.info('Generate remote tags operation completed.')
+        #logger.info('Generate remote tags operation completed.')
     else:
         logger.error('Invalid tag_type: ' + tag_type + ' for generate command. local | remote')
 

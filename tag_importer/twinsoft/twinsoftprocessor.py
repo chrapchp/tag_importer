@@ -64,6 +64,7 @@ class TwinsoftError(Exception):
     TE_MEMORY_MAP_CONFLICT = -114
     TE_GROUP_EMPTY = -115
     TE_DOUBLE_UNDERSCORES = -116
+    TE_CALC_ADDRESS_NOT_IN_MEMORY_MAP = -117
 
     def __init__(self, message, errors):
         super().__init__(message)
@@ -313,6 +314,24 @@ class TwinsoftProcessor:
                 self.__xml_encode_tag, axis=1)))
             xmlFile.write('</TWinSoftTags>')
 
+    def __validate_gen_df_addresses(self, df):
+        merged_df = pd.merge(df, self.__xl_memory_map_df, left_on=[
+            'Group', 'TS_FORMAT'], right_on=['GROUP', 'TS_FORMAT'], how='right')
+        merged_df = merged_df[merged_df['Group'].notna()]
+
+        merged_df['MAX_ADDRESS'] = np.where(merged_df['FORMAT_x'].isin(['FLOAT', 'INT32', 'UINT32']),
+                                            merged_df['START_ADDRESS_y'] + merged_df['LENGTH_y'] * 2 - 2, merged_df['START_ADDRESS_y'] + merged_df['LENGTH_y'] - 1)
+        merged_df.drop(['Group', 'Format', 'Signed', 'INITIAL_VALUE',  'GROUP_NUM_y',  'COMMENT_y',
+                        'RULE', 'TS_SIGNED_x', 'LENGTH_x', 'MB_MIN', 'MB_MAX', 'CALC_INC', 'FOLDER', 'TS_FORMAT', 'LENGTH_y', 'START_ADDRESS_x', 'HAS_DATA', 'DESCRIPTION', 'GROUP_NUM_x', 'COMMENT_x', 'TS_SIGNED_y', 'FORMAT_y', 'SCRIPT_VALUE'], axis=1, inplace=True)
+
+        merged_df.rename({'START_ADDRESS_y': 'MIN_ADDRESS',
+                          'FORMAT_x': 'FORMAT'}, axis=1, inplace=True)
+        errs = merged_df[(merged_df['CALC_ADDRESS'] > merged_df['MAX_ADDRESS']) | (
+            merged_df['CALC_ADDRESS'] < merged_df['MIN_ADDRESS'])]
+        if errs.shape[0] > 0:
+            raise TwinsoftError("The following generated tags contain addresses that fall outside of the memory map.\n{}\n Revise MEMORY_MAP in excel file for flagged Group/Format.\n".format(
+                errs), TwinsoftError.TE_CALC_ADDRESS_NOT_IN_MEMORY_MAP)
+
     def __validate_gen_df(self, gen_df):
 
         t = gen_df.loc[(gen_df['TAG'].str.contains('.+__.+', regex=True))]
@@ -332,6 +351,7 @@ class TwinsoftProcessor:
             raise TwinsoftError('\nGenerated Descriptions for Tag Names \n' + str(list(t['TAG'])) + '\ngreather than ' + str(
                 TwinsoftProcessor.TW_TAG_MAX_DESC_LEN) + ' characters. Consider shortening the template description or tag description prefix.', TwinsoftError.TE_TAG_DESC_TOO_LONG)
 
+        self.__validate_gen_df_addresses(gen_df)
         # check for duplicate calculated modbus addresses for DIGITALS and NON-DIGITAL TAGS
 
         subset_df = gen_df[gen_df['FORMAT'] == 'BOOL'].copy()
@@ -409,7 +429,8 @@ class TwinsoftProcessor:
         self.__to_twinsoft_xml(gen_tags_merged)
 
     def generate_remote_tags(self, pattern):
-        print("TODO")
+        self.__logger.info("Remote Tag functionality not yet implemented.")
+
     def generate_tags(self, pattern):
         self.load_data()
 
@@ -424,7 +445,7 @@ class TwinsoftProcessor:
         # check if any templates are not found and abort process if any entry does not line up
         errs = list(pattern_df[pattern_df['SUFFIX'].isna()]
                     ['TEMPLATE'].unique())
-            
+
         if len(errs):
             raise TwinsoftError('TEMPLATES ' + str(errs) + ' defined in sheet ' + ExcelProcessor.EXCEL_TAG_SHEET + ' not found under ' +
                                 ExcelProcessor.EXCEL_TEMPLATE + ' sheet for file ' + self.xl_processor.xl_file_name, TwinsoftError.TE_TEMPLATE_NOT_FOUND)
@@ -442,11 +463,12 @@ class TwinsoftProcessor:
         pattern_df = pd.merge(pattern_df, self.__xl_memory_map_df, left_on=[
             'GROUP', 'TYPE_y'], right_on=['GROUP', 'FORMAT'], how='left')
 
-  
-        errs = pattern_df[pattern_df['FORMAT_y'].isna()][['GROUP','NEW_TAG','TYPE_y']]
-        
-        if errs.shape[0]>0:
-            raise TwinsoftError( "GROUP not found in memory map. \n{} \nPossibly a TYPE in the TEMPLATE does not exist for a GROUP in the MEMORY_MAP.\n".format(errs)  , TwinsoftError.TE_GROUP_NOT_FOUND)
+        errs = pattern_df[pattern_df['FORMAT_y'].isna()][[
+            'GROUP', 'NEW_TAG', 'TYPE_y']]
+
+        if errs.shape[0] > 0:
+            raise TwinsoftError("GROUP not found in memory map. \n{} \nPossibly a TYPE in the TEMPLATE does not exist for a GROUP in the MEMORY_MAP.\n".format(
+                errs), TwinsoftError.TE_GROUP_NOT_FOUND)
 
         # clean up headers
         pattern_df.drop(['CLASS', 'TAG_NAME', 'TAG_PATTERN', 'DESCRIPTION_x', 'TEMPLATE', 'GROUP', 'SUFFIX', 'TYPE_y',
