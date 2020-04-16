@@ -126,26 +126,37 @@ def clone(ctx, tag_filter, group_filter, dest, loop, offset, replace_pattern):
 
 @main.command()
 @click.argument('item')
+@click.option('--mapped/--no-mapped', default=False)
 @click.pass_context
-def tabulate(ctx, item):
+def tabulate(ctx, item,mapped):
     '''
     Tabulate input data and copy results to clipboard
 
     Arguments:
                     item: xmlsummary | tags | map | template
+
+    --mapped  will cause xmlmsummary will be formated as an MEMORY_MAP format for Excel
     '''
     x = None
     log_message = None
     if item == 'xmlsummary':
 
-        ctx.obj['twinsoft_processor'].load_twinsoft_xml()
-        x = ctx.obj['twinsoft_processor'].get_twinsoft_export_summary()
-        log_message = 'Summarizing Twinsoft XML ' + ctx.obj['twinsoft_export']
+        ctx.obj['twinsoft_processor'].load_twinsoft_xml(validate=False)
+
+       
+        if mapped:
+            log_message = 'Summarizing Twinsoft XML ' + ctx.obj['twinsoft_export'] + ' as MEMORY_MAP REMOVE INDEX'
+        else:
+            log_message = 'Summarizing Twinsoft XML ' + ctx.obj['twinsoft_export']
+
+        x = ctx.obj['twinsoft_processor'].get_twinsoft_export_summary(mapped)
+
 
     elif item == 'map':
         x = ctx.obj['excel_processor'].memory_map_df
         log_message = 'Excel sheet ' + ExcelProcessor.EXCEL_MEMORY_MAP_SHEET + \
             ' in file ' + ctx.obj['excel']
+      
 
     elif item == 'template':
         x = ctx.obj['excel_processor'].template_df
