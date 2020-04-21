@@ -2,7 +2,7 @@
  XML Generator to assist in the creation and modification of tags for Ovarro's TBOX RTU
 
 ## Requires
-TwinSoft RTU/PLC software from Ovarro
+TwinSoft [RTU](https://www.servelectechnologies.com/servelec-technologies/products-services/remote-telemetry-units/tbox/tbox-lt2/) software from Ovarro 
 TwinSoftImEx Tool from Ovarra
 
 ## Why

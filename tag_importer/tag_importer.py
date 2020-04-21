@@ -1,7 +1,7 @@
 
 import pandas as pd
-import argparse
-import sys
+#import argparse
+#import sys
 import logging
 
 import click
@@ -72,11 +72,15 @@ def generate(ctx, pattern,tag_type):
 @click.option('--tag_filter', required=False, help='Twinsoft Tag Name filter regex pattern Default: .+')
 @click.option('--group_filter', required=True, help='Twinsoft Group  regex pattern')
 @click.option('--dest', required=False, help='Destination Folder in Twinsoft. If not provided, mirror group_filter pattern')
-@click.option('--loop', required=True, help='Loop number to ensure tags ang groups are unique')
+@click.option('--loop', required=True, help='Loop number to ensure tags and groups are unique')
 @click.option('--offset', required=True, type=int, help='Address Offset to shift tags into')
-@click.option('--replace_pattern', required=False, help='Replacement filter regex pattern. Default: \\d')
+@click.option('--replace_pattern', required=False, help='Replacement filter regex pattern for tags and groups. Default: \\d')
+@click.option('--recurse/--no-recurse', default=True, help='Recurse Folder e.g. CHAMBER 1 and CHAMBER 1/SOFTS. default:--recurse')
+@click.option('--blind_validation/--no-blind_validation', default=False, help='Force Validation of cloned addresses against memory map')
+@click.option('--group_find', required=False, default=None, help='Find group_find and replace with group_replace')
+@click.option('--group_replace', required=False, default=None, help='Find group_find and replace with group_replace')
 @click.pass_context
-def clone(ctx, tag_filter, group_filter, dest, loop, offset, replace_pattern):
+def clone(ctx, tag_filter, group_filter, dest, loop, offset, replace_pattern,recurse,blind_validation,group_find,group_replace):
     '''
     Clone folder from twinsoft export XML file
 
@@ -86,9 +90,9 @@ def clone(ctx, tag_filter, group_filter, dest, loop, offset, replace_pattern):
 
         Standard Tag Pattern:
 
-            From LT_101 LT_115, TI_102, TIC_103 are in group CHAMBER 1 starting at adress 1000
+            From LT_101 LT_115, TI_102, TIC_103 are in group CHAMBER 1 and CHAMBER 1\SOFTS containts LT_101_SP starting at adress 1000
 
-            To LT_201 LT_215, TI_202, TIC_203 are in group CHAMBER 2 with address starting at 2500
+            To LT_201 LT_215, TI_202, TIC_203 are in group CHAMBER 2 and LT_201_SP in CHAMBER 2\SOFTS with address starting at 2500
 
             pass options --group_filter "CHAMBER 1" --loop 2  --offset 1500
 
@@ -107,20 +111,34 @@ def clone(ctx, tag_filter, group_filter, dest, loop, offset, replace_pattern):
             To LT_201 LT_215, TI_202, TIC_203 are in group SPECIAL FOLDER with address starting at 2500
 
             pass options --group_filter "CHAMBER 1" --loop 2  --offset 1500 --dest "SPECIAL FOLDER"
+        
+        Altenative Tag Pattern:
+            
+            From LT_101 LT_115, TI_102, TIC_103 are in group CHAMBER 1 and CHAMBER 1\SOFTS containts LT_101_SP starting at adress 1000
+
+            To LT_201 LT_215, TI_202, TIC_203 are in group CHAMBER 2 AND don't clone subfolders with address starting at 2500
+
+            pass options --group_filter "CHAMBER 1" --loop 2  --offset 1500  --no-recurse      
 
 
     '''
     spattern = tag_filter
     sreplace_pattern = replace_pattern
+    sgroup_filter = group_filter
+    
+    if not recurse:
+        sgroup_filter = "^"+group_filter+"$"
 
     if tag_filter is None:
         spattern = "^.+\d.+"
+    if group_find is not None and group_replace is None:
+        raise ExcelProcessorError("option --group_replace required")
 
     if replace_pattern is None:
         sreplace_pattern = "\d"
 
     ctx.obj['twinsoft_processor'].clone(
-        spattern, group_filter, dest, offset, loop, sreplace_pattern)
+        spattern, sgroup_filter, dest, offset, loop, sreplace_pattern,blind_validation,group_find, group_replace)
     logger.info('Clone operation completed.')
 
 
