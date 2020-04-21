@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TWinSoftTags>
+  <Tag Name="NewTag">
+    <NewName>NewTag</NewName>
+    <Address>DIV00000</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>20480</ModbusAddress>
+    <Comment />
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>deleteme</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+</TWinSoftTags>

@@ -1,0 +1,4695 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TWinSoftTags>
+  <Tag Name="RIO_1_CT">
+    <NewName>RIO_1_CT</NewName>
+    <Address>DIV00000</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10000</ModbusAddress>
+    <Comment>RIO1 COMMUNICATION TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_CC">
+    <NewName>RIO_1_CC</NewName>
+    <Address>AIV00000</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10001</ModbusAddress>
+    <Comment>RIO 1 COMMUNICATION CYCLE COUNT</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_CE">
+    <NewName>RIO_1_CE</NewName>
+    <Address>DIV00002</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10002</ModbusAddress>
+    <Comment>RIO 1 COMMUNICATION ERROR</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_ST">
+    <NewName>RIO_1_ST</NewName>
+    <Address>AIV00001</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10003</ModbusAddress>
+    <Comment>RIO 1 COMMUNICATION STATUS</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_2_CT">
+    <NewName>RIO_2_CT</NewName>
+    <Address>DIV00034</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10004</ModbusAddress>
+    <Comment>RIO 2 COMMUNICATION TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_2_CC">
+    <NewName>RIO_2_CC</NewName>
+    <Address>AIV00010</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10005</ModbusAddress>
+    <Comment>RIO 2 COMMUNICATION CYCLE COUNT</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_2_CE">
+    <NewName>RIO_2_CE</NewName>
+    <Address>DIV00035</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10006</ModbusAddress>
+    <Comment>RIO 2 COMMUNICATION ERROR</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_2_ST">
+    <NewName>RIO_2_ST</NewName>
+    <Address>AIV00011</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10007</ModbusAddress>
+    <Comment>RIO 2 COMMUNICATION STATUS</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_3_CT">
+    <NewName>RIO_3_CT</NewName>
+    <Address>DIV00036</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10008</ModbusAddress>
+    <Comment>RIO 3 COMMUNICATION TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_3_CC">
+    <NewName>RIO_3_CC</NewName>
+    <Address>AIV00012</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10009</ModbusAddress>
+    <Comment>RIO 3 COMMUNICATION CYCLE COUNT</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_3_CE">
+    <NewName>RIO_3_CE</NewName>
+    <Address>DIV00037</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10010</ModbusAddress>
+    <Comment>RIO 3 COMMUNICATION ERROR</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_3_ST">
+    <NewName>RIO_3_ST</NewName>
+    <Address>AIV00013</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10011</ModbusAddress>
+    <Comment>RIO 3 COMMUNICATION STATUS</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_4_CT">
+    <NewName>RIO_4_CT</NewName>
+    <Address>DIV00038</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10012</ModbusAddress>
+    <Comment>RIO 4 COMMUNICATION TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_4_CC">
+    <NewName>RIO_4_CC</NewName>
+    <Address>AIV00014</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10013</ModbusAddress>
+    <Comment>RIO 4 COMMUNICATION CYCLE COUNT</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_4_CE">
+    <NewName>RIO_4_CE</NewName>
+    <Address>DIV00039</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10014</ModbusAddress>
+    <Comment>RIO 4 COMMUNICATION ERROR</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_4_ST">
+    <NewName>RIO_4_ST</NewName>
+    <Address>AIV00015</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10015</ModbusAddress>
+    <Comment>RIO 4 COMMUNICATION STATUS</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_5_CT">
+    <NewName>RIO_5_CT</NewName>
+    <Address>DIV00040</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10016</ModbusAddress>
+    <Comment>RIO 5 COMMUNICATION TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_5_CC">
+    <NewName>RIO_5_CC</NewName>
+    <Address>AIV00016</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10017</ModbusAddress>
+    <Comment>RIO 5 COMMUNICATION CYCLE COUNT</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_5_CE">
+    <NewName>RIO_5_CE</NewName>
+    <Address>DIV00041</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10018</ModbusAddress>
+    <Comment>RIO 5 COMMUNICATION ERROR</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_5_ST">
+    <NewName>RIO_5_ST</NewName>
+    <Address>AIV00017</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10019</ModbusAddress>
+    <Comment>RIO 5 COMMUNICATION STATUS</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_6_CT">
+    <NewName>RIO_6_CT</NewName>
+    <Address>DIV00042</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10020</ModbusAddress>
+    <Comment>RIO 6 COMMUNICATION TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_6_CC">
+    <NewName>RIO_6_CC</NewName>
+    <Address>AIV00018</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10021</ModbusAddress>
+    <Comment>RIO 6 COMMUNICATION CYCLE COUNT</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_6_CE">
+    <NewName>RIO_6_CE</NewName>
+    <Address>DIV00043</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10022</ModbusAddress>
+    <Comment>RIO 6 COMMUNICATION ERROR</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_6_ST">
+    <NewName>RIO_6_ST</NewName>
+    <Address>AIV00019</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10023</ModbusAddress>
+    <Comment>RIO 6 COMMUNICATION STATUS</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_7_CT">
+    <NewName>RIO_7_CT</NewName>
+    <Address>DIV00044</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10024</ModbusAddress>
+    <Comment>RIO 7 COMMUNICATION TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_7_CC">
+    <NewName>RIO_7_CC</NewName>
+    <Address>AIV00020</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10025</ModbusAddress>
+    <Comment>RIO 7 COMMUNICATION CYCLE COUNT</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_7_CE">
+    <NewName>RIO_7_CE</NewName>
+    <Address>DIV00045</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10026</ModbusAddress>
+    <Comment>RIO 7 COMMUNICATION ERROR</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_7_ST">
+    <NewName>RIO_7_ST</NewName>
+    <Address>AIV00021</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10027</ModbusAddress>
+    <Comment>RIO 7 COMMUNICATION STATUS</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DI_0">
+    <NewName>RIO_1_DI_0</NewName>
+    <Address>DIV00046</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10100</ModbusAddress>
+    <Comment>RIO_1_DI_0 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DI_1">
+    <NewName>RIO_1_DI_1</NewName>
+    <Address>DIV00047</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10101</ModbusAddress>
+    <Comment>RIO_1_DI_1 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DI_2">
+    <NewName>RIO_1_DI_2</NewName>
+    <Address>DIV00048</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10102</ModbusAddress>
+    <Comment>RIO_1_DI_2 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DI_3">
+    <NewName>RIO_1_DI_3</NewName>
+    <Address>DIV00049</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10103</ModbusAddress>
+    <Comment>RIO_1_DI_3 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DI_4">
+    <NewName>RIO_1_DI_4</NewName>
+    <Address>DIV00050</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10104</ModbusAddress>
+    <Comment>RIO_1_DI_4 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DI_5">
+    <NewName>RIO_1_DI_5</NewName>
+    <Address>DIV00051</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10105</ModbusAddress>
+    <Comment>RIO_1_DI_5 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DI_6">
+    <NewName>RIO_1_DI_6</NewName>
+    <Address>DIV00052</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10106</ModbusAddress>
+    <Comment>RIO_1_DI_6 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DI_7">
+    <NewName>RIO_1_DI_7</NewName>
+    <Address>DIV00053</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10107</ModbusAddress>
+    <Comment>RIO_1_DI_7 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DI_8">
+    <NewName>RIO_1_DI_8</NewName>
+    <Address>DIV00054</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10108</ModbusAddress>
+    <Comment>RIO_1_DI_8 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="LSHH_201_">
+    <NewName>LSHH_201_</NewName>
+    <Address>DIV00055</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10109</ModbusAddress>
+    <Comment>CHAMBER 2 NUTRIENT TANK LEVEL HI HI SHUT DOWN</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="LSLL_201_">
+    <NewName>LSLL_201_</NewName>
+    <Address>DIV00056</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10110</ModbusAddress>
+    <Comment>CHAMBER 2 NUTRIENT TANK LEVEL LO LO SHUT DOWN</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DI_11">
+    <NewName>RIO_1_DI_11</NewName>
+    <Address>DIV00057</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10111</ModbusAddress>
+    <Comment>RIO_1_DI_11 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DI_12">
+    <NewName>RIO_1_DI_12</NewName>
+    <Address>DIV00058</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10112</ModbusAddress>
+    <Comment>RIO_1_DI_12 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DI_13">
+    <NewName>RIO_1_DI_13</NewName>
+    <Address>DIV00059</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10113</ModbusAddress>
+    <Comment>RIO_1_DI_13 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DI_14">
+    <NewName>RIO_1_DI_14</NewName>
+    <Address>DIV00060</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10114</ModbusAddress>
+    <Comment>RIO_1_DI_14 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DI_15">
+    <NewName>RIO_1_DI_15</NewName>
+    <Address>DIV00061</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10115</ModbusAddress>
+    <Comment>RIO_1_DI_15 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="AT_103_">
+    <NewName>AT_103_</NewName>
+    <Address>AIV00022</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>10132</ModbusAddress>
+    <Comment>CHAMBER 1 VAISALA CO2 TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="AT_104_">
+    <NewName>AT_104_</NewName>
+    <Address>AIV00023</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>10134</ModbusAddress>
+    <Comment>CHAMBER 1 VAISALA HUMIDITY TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="PDT_101_">
+    <NewName>PDT_101_</NewName>
+    <Address>AIV00024</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>10136</ModbusAddress>
+    <Comment>CHAMBER 1 FILTER PRESSURE DIFFERENTIAL TRANS</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="PT_201_">
+    <NewName>PT_201_</NewName>
+    <Address>AIV00025</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>10138</ModbusAddress>
+    <Comment>CHAMBER 2 NUTRIENT FEED PRESSURE TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="FT_201_">
+    <NewName>FT_201_</NewName>
+    <Address>AIV00026</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>10140</ModbusAddress>
+    <Comment>CHAMBER 2 NUTRIENT FEED FLOW TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_201_">
+    <NewName>MT_201_</NewName>
+    <Address>AIV00027</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>10142</ModbusAddress>
+    <Comment>CHAMBER 2 NUTRIENT MOISTURE TRANSMITTER 1</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_202_">
+    <NewName>MT_202_</NewName>
+    <Address>AIV00028</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>10144</ModbusAddress>
+    <Comment>CHAMBER 2 NUTRIENT MOISTURE TRANSMITTER 2</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_203_">
+    <NewName>MT_203_</NewName>
+    <Address>AIV00029</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>10146</ModbusAddress>
+    <Comment>CHAMBER 2 NUTRIENT MOISTURE TRANSMITTER 3</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_109_">
+    <NewName>HS_109_</NewName>
+    <Address>DIV00062</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10116</ModbusAddress>
+    <Comment>CHAMBER 1 COOLING ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_105_">
+    <NewName>HS_105_</NewName>
+    <Address>DIV00063</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10117</ModbusAddress>
+    <Comment>CHAMBER 1 FAN ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_104_">
+    <NewName>HS_104_</NewName>
+    <Address>DIV00064</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10118</ModbusAddress>
+    <Comment>CHAMBER 1 HUMIDIFIER ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_103_">
+    <NewName>HS_103_</NewName>
+    <Address>DIV00065</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10119</ModbusAddress>
+    <Comment>CHAMBER 1 DEHUMIDIFIER ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_106_">
+    <NewName>HS_106_</NewName>
+    <Address>DIV00066</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10120</ModbusAddress>
+    <Comment>CHAMBER 1 OSCILLATING FANS ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_201_">
+    <NewName>HS_201_</NewName>
+    <Address>DIV00067</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10121</ModbusAddress>
+    <Comment>CHAMBER 2 NUTRIENT FEED PUMP ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_204_">
+    <NewName>XY_204_</NewName>
+    <Address>DIV00068</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10122</ModbusAddress>
+    <Comment>CHAMBER 2 NUTRIENT FEED SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_210_">
+    <NewName>XY_210_</NewName>
+    <Address>DIV00069</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10123</ModbusAddress>
+    <Comment>CHAMBER 2 NUTRIENT FEED RECIRC SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_212_">
+    <NewName>XY_212_</NewName>
+    <Address>DIV00070</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10124</ModbusAddress>
+    <Comment>CHAMBER 2 NUTRIENT TANK DRAIN SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DO_9">
+    <NewName>RIO_1_DO_9</NewName>
+    <Address>DIV00071</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10125</ModbusAddress>
+    <Comment>RIO_1_DO_9 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_DO_10">
+    <NewName>RIO_1_DO_10</NewName>
+    <Address>DIV00072</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10126</ModbusAddress>
+    <Comment>RIO_1_DO_10 SPARE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_002_">
+    <NewName>HS_002_</NewName>
+    <Address>DIV00073</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10127</ModbusAddress>
+    <Comment>NUTRIENT 2 DOSING PUMP ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_221_">
+    <NewName>XY_221_</NewName>
+    <Address>DIV00074</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10128</ModbusAddress>
+    <Comment>CHAMBER 2 pH UP SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_222_">
+    <NewName>XY_222_</NewName>
+    <Address>DIV00075</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10129</ModbusAddress>
+    <Comment>CHAMBER 2 pH DOWN SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_224_">
+    <NewName>XY_224_</NewName>
+    <Address>DIV00076</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10130</ModbusAddress>
+    <Comment>CHAMBER 2 RO WATER FILL SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_202_">
+    <NewName>HS_202_</NewName>
+    <Address>DIV00077</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10131</ModbusAddress>
+    <Comment>CHAMBER 2 DUCT UV LIGHT ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="PT_101_">
+    <NewName>PT_101_</NewName>
+    <Address>AI.0.4.0.420mA</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>128</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT FEED PRESSURE TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>100</Maximum>
+    <Resolution>0.1</Resolution>
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="FT_101_">
+    <NewName>FT_101_</NewName>
+    <Address>AI.0.4.1.420mA</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>130</ModbusAddress>
+    <Comment>CHAMBER 1 VEG NUTRIENT FEED FLOW TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>50</Maximum>
+    <Resolution>0.1</Resolution>
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_101_">
+    <NewName>MT_101_</NewName>
+    <Address>AI.0.4.2.420mA</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>132</ModbusAddress>
+    <Comment>CHAMBER 1 VEG MOISTURE TRANSMITTER 1</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>100</Maximum>
+    <Resolution>0.1</Resolution>
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_102_">
+    <NewName>MT_102_</NewName>
+    <Address>AI.0.4.3.420mA</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>134</ModbusAddress>
+    <Comment>CHAMBER 1 VEG MOISTURE TRANSMITTER 2</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>100</Maximum>
+    <Resolution>0.1</Resolution>
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_103_">
+    <NewName>MT_103_</NewName>
+    <Address>AI.0.4.4.420mA</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>136</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER MOISTURE TRANSMITTER 1</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>100</Maximum>
+    <Resolution>0.1</Resolution>
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_104_">
+    <NewName>MT_104_</NewName>
+    <Address>AI.0.4.5.420mA</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>138</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER MOISTURE TRANSMITTER 2</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>100</Maximum>
+    <Resolution>0.1</Resolution>
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="LT_101_">
+    <NewName>LT_101_</NewName>
+    <Address>AI.0.4.6.420mA</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>140</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT TANK LEVEL TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>102</Maximum>
+    <Resolution>0.1</Resolution>
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="AT_105_">
+    <NewName>AT_105_</NewName>
+    <Address>AI.0.4.7.420mA</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>142</ModbusAddress>
+    <Comment>CHAMBER 1 VAISALA TEMP TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>-5</Minimum>
+    <Maximum>55</Maximum>
+    <Resolution>0.1</Resolution>
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="LSHH_101_">
+    <NewName>LSHH_101_</NewName>
+    <Address>DI.0.2.5</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>69</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT TANK LEVEL HI HI SHUT DOWN</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="LSLL_101_">
+    <NewName>LSLL_101_</NewName>
+    <Address>DI.0.2.6</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>70</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT TANK LEVEL LO LO SHUT DOWN</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_101_">
+    <NewName>HS_101_</NewName>
+    <Address>DO.0.3.0</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>96</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT FEED PUMP ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_104_">
+    <NewName>XY_104_</NewName>
+    <Address>DO.0.3.1</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>97</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT MOTHER FEED SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_107_">
+    <NewName>XY_107_</NewName>
+    <Address>DO.0.3.2</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>98</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT VEG FEED SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_110_">
+    <NewName>XY_110_</NewName>
+    <Address>DO.0.3.3</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>99</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT FEED RECIRC SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_112_">
+    <NewName>XY_112_</NewName>
+    <Address>DO.0.3.4</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>100</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT TANK DRAIN SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_001_">
+    <NewName>HS_001_</NewName>
+    <Address>DO.0.3.7</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>103</ModbusAddress>
+    <Comment>NUTRIENT 1 DOSING PUMP ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_121_">
+    <NewName>XY_121_</NewName>
+    <Address>DO.0.3.8</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>104</ModbusAddress>
+    <Comment>CHAMBER 1 pH UP SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_122_">
+    <NewName>XY_122_</NewName>
+    <Address>DO.0.3.9</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>105</ModbusAddress>
+    <Comment>CHAMBER 1 pH DOWN SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_124_">
+    <NewName>XY_124_</NewName>
+    <Address>DO.0.3.10</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>106</ModbusAddress>
+    <Comment>CHAMBER 1 RO WATER FILL SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_102_">
+    <NewName>HS_102_</NewName>
+    <Address>DO.0.3.11</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>107</ModbusAddress>
+    <Comment>CHAMBER 1 DUCT UV LIGHT ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_108_">
+    <NewName>HS_108_</NewName>
+    <Address>DO.0.3.12</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>108</ModbusAddress>
+    <Comment>CHAMBER 1 SS550 VEG LIGHTS ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_107_">
+    <NewName>HS_107_</NewName>
+    <Address>DO.0.3.13</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>109</ModbusAddress>
+    <Comment>CHAMBER 1 SS550 MOTHER LIGHTS ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_125_">
+    <NewName>XY_125_</NewName>
+    <Address>DO.0.3.14</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>110</ModbusAddress>
+    <Comment>CHAMBER 1 CO2 SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_110_">
+    <NewName>HS_110_</NewName>
+    <Address>DO.0.3.15</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>111</ModbusAddress>
+    <Comment>CHAMBER 1 HEAT ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>MAINCTRL IO</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="AT_101">
+    <NewName>AT_101</NewName>
+    <Address>AIV00100</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1000</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT TANK PH TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="AT_102">
+    <NewName>AT_102</NewName>
+    <Address>AIV00101</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1002</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT TANK EC TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_501">
+    <NewName>XY_501</NewName>
+    <Address>DIV00319</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>5008</ModbusAddress>
+    <Comment>DRY CURE ACTUATOR OPEN CLOSE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="CI_501">
+    <NewName>CI_501</NewName>
+    <Address>DIV00320</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>5009</ModbusAddress>
+    <Comment>DRY CURE DAMPER END SWITCH</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_501">
+    <NewName>HS_501</NewName>
+    <Address>DIV00321</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>5006</ModbusAddress>
+    <Comment>DRY CURE FANS ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_502">
+    <NewName>HS_502</NewName>
+    <Address>DIV00322</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>5007</ModbusAddress>
+    <Comment>DRY CURE UV LIGHT ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="AT_501">
+    <NewName>AT_501</NewName>
+    <Address>AIV00115</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>5000</ModbusAddress>
+    <Comment>DRY CURE VAISALA HUMIDITY TRANSMITTER (0-10V)</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="AT_502">
+    <NewName>AT_502</NewName>
+    <Address>AIV00116</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>5002</ModbusAddress>
+    <Comment>DRY CURE VAISALA TEMP TRANSMITTER (0-10V)</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_001">
+    <NewName>HS_001</NewName>
+    <Address>DIV00323</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>5010</ModbusAddress>
+    <Comment>NUTRIENT 1 DOSING PUMP ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_002">
+    <NewName>HS_002</NewName>
+    <Address>DIV00324</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>5011</ModbusAddress>
+    <Comment>NUTRIENT 2 DOSING PUMP ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_003">
+    <NewName>HS_003</NewName>
+    <Address>DIV00325</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>5012</ModbusAddress>
+    <Comment>NUTRIENT 3 DOSING PUMP ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_004">
+    <NewName>HS_004</NewName>
+    <Address>DIV00326</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>5013</ModbusAddress>
+    <Comment>NUTRIENT 4 DOSING PUMP ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_005">
+    <NewName>HS_005</NewName>
+    <Address>DIV00327</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>5014</ModbusAddress>
+    <Comment>NUTRIENT 5 DOSING PUMP ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_006">
+    <NewName>HS_006</NewName>
+    <Address>DIV00328</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>5015</ModbusAddress>
+    <Comment>NUTRIENT 6 DOSING PUMP ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_007">
+    <NewName>HS_007</NewName>
+    <Address>DIV00329</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>5016</ModbusAddress>
+    <Comment>NUTRIENT 7 DOSING PUMP ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="FT_001">
+    <NewName>FT_001</NewName>
+    <Address>AIV00117</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>5004</ModbusAddress>
+    <Comment>NUTRIENT CENTER CITY WATER FILL FLOW TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_009">
+    <NewName>HS_009</NewName>
+    <Address>DIV00330</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>5017</ModbusAddress>
+    <Comment>NUTRIENT pH DOWN PUMP ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_008">
+    <NewName>HS_008</NewName>
+    <Address>DIV00331</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>5018</ModbusAddress>
+    <Comment>NUTRIENT pH UP PUMP ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="AT_103">
+    <NewName>AT_103</NewName>
+    <Address>AIV00118</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1004</ModbusAddress>
+    <Comment>CHAMBER 1 VAISALA CO2 TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="AT_104">
+    <NewName>AT_104</NewName>
+    <Address>AIV00119</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1006</ModbusAddress>
+    <Comment>CHAMBER 1 VAISALA HUMIDITY TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="AT_105">
+    <NewName>AT_105</NewName>
+    <Address>AIV00120</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1008</ModbusAddress>
+    <Comment>CHAMBER 1 VAISALA TEMP TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="FT_101">
+    <NewName>FT_101</NewName>
+    <Address>AIV00121</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1010</ModbusAddress>
+    <Comment>CHAMBER 1 VEG NUTRIENT FEED FLOW TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_101">
+    <NewName>HS_101</NewName>
+    <Address>DIV00332</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1030</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT FEED PUMP ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_102">
+    <NewName>HS_102</NewName>
+    <Address>DIV00333</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1031</ModbusAddress>
+    <Comment>CHAMBER 1 DUCT UV LIGHT ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_103">
+    <NewName>HS_103</NewName>
+    <Address>DIV00334</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1032</ModbusAddress>
+    <Comment>CHAMBER 1 DEHUMIDIFIER ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_104">
+    <NewName>HS_104</NewName>
+    <Address>DIV00335</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1033</ModbusAddress>
+    <Comment>CHAMBER 1 HUMIDIFIER ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_105">
+    <NewName>HS_105</NewName>
+    <Address>DIV00336</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1034</ModbusAddress>
+    <Comment>CHAMBER 1 FAN ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_106">
+    <NewName>HS_106</NewName>
+    <Address>DIV00337</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1035</ModbusAddress>
+    <Comment>CHAMBER 1 OSCILLATING FANS ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_107">
+    <NewName>HS_107</NewName>
+    <Address>DIV00338</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1036</ModbusAddress>
+    <Comment>CHAMBER 1 SS550 MOTHER LIGHTS ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_108">
+    <NewName>HS_108</NewName>
+    <Address>DIV00339</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1037</ModbusAddress>
+    <Comment>CHAMBER 1 SS550 VEG LIGHTS ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_109">
+    <NewName>HS_109</NewName>
+    <Address>DIV00340</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1038</ModbusAddress>
+    <Comment>CHAMBER 1 COOLING ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_110">
+    <NewName>HS_110</NewName>
+    <Address>DIV00341</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1039</ModbusAddress>
+    <Comment>CHAMBER 1 HEAT ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="LSHH_101">
+    <NewName>LSHH_101</NewName>
+    <Address>DIV00342</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1040</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT TANK LEVEL HI HI SHUT DOWN</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="LSLL_101">
+    <NewName>LSLL_101</NewName>
+    <Address>DIV00343</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1041</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT TANK LEVEL LO LO SHUT DOWN</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="LT_101">
+    <NewName>LT_101</NewName>
+    <Address>AIV00122</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1012</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT TANK LEVEL TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_101">
+    <NewName>MT_101</NewName>
+    <Address>AIV00123</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1014</ModbusAddress>
+    <Comment>CHAMBER 1 VEG MOISTURE TRANSMITTER 1</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_102">
+    <NewName>MT_102</NewName>
+    <Address>AIV00124</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1016</ModbusAddress>
+    <Comment>CHAMBER 1 VEG MOISTURE TRANSMITTER 2</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_103">
+    <NewName>MT_103</NewName>
+    <Address>AIV00125</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1018</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER MOISTURE TRANSMITTER 1</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_104">
+    <NewName>MT_104</NewName>
+    <Address>AIV00126</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1024</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER MOISTURE TRANSMITTER 2</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="PDT_101">
+    <NewName>PDT_101</NewName>
+    <Address>AIV00127</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1020</ModbusAddress>
+    <Comment>CHAMBER 1 FILTER PRESSURE DIFFERENTIAL TRANS</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="PT_101">
+    <NewName>PT_101</NewName>
+    <Address>AIV00128</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1022</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT FEED PRESSURE TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_104">
+    <NewName>XY_104</NewName>
+    <Address>DIV00344</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1042</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT MOTHER FEED SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_107">
+    <NewName>XY_107</NewName>
+    <Address>DIV00345</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1056</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT VEG FEED SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_110">
+    <NewName>XY_110</NewName>
+    <Address>DIV00346</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1043</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT FEED RECIRC SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_112">
+    <NewName>XY_112</NewName>
+    <Address>DIV00347</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1044</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT TANK DRAIN SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_114">
+    <NewName>XY_114</NewName>
+    <Address>DIV00348</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1045</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT 1 DOSING SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_115">
+    <NewName>XY_115</NewName>
+    <Address>DIV00349</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1046</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT 2 DOSING SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_116">
+    <NewName>XY_116</NewName>
+    <Address>DIV00350</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1047</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT 3 DOSING SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_117">
+    <NewName>XY_117</NewName>
+    <Address>DIV00351</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1048</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT 4 DOSING SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_118">
+    <NewName>XY_118</NewName>
+    <Address>DIV00352</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1049</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT 5 DOSING SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_119">
+    <NewName>XY_119</NewName>
+    <Address>DIV00353</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1050</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT 6 DOSING SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_120">
+    <NewName>XY_120</NewName>
+    <Address>DIV00354</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1051</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT 7 DOSING SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_121">
+    <NewName>XY_121</NewName>
+    <Address>DIV00355</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1052</ModbusAddress>
+    <Comment>CHAMBER 1 pH UP SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_122">
+    <NewName>XY_122</NewName>
+    <Address>DIV00356</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1053</ModbusAddress>
+    <Comment>CHAMBER 1 pH DOWN SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_124">
+    <NewName>XY_124</NewName>
+    <Address>DIV00357</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1054</ModbusAddress>
+    <Comment>CHAMBER 1 RO WATER FILL SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_125">
+    <NewName>XY_125</NewName>
+    <Address>DIV00358</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1055</ModbusAddress>
+    <Comment>CHAMBER 1 CO2 SOLENOID VALVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_150_PERM">
+    <NewName>HS_150_PERM</NewName>
+    <Address>DIV00363</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1500</ModbusAddress>
+    <Comment>CHAMBER 1 R/O WATER FILL - PERMISSIVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_151_PERM">
+    <NewName>HS_151_PERM</NewName>
+    <Address>DIV00364</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1501</ModbusAddress>
+    <Comment>CHAMBER 1 RECIRCULATION - PERMISSIVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_152_PERM">
+    <NewName>HS_152_PERM</NewName>
+    <Address>DIV00365</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1502</ModbusAddress>
+    <Comment>CHAMBER 1 FEED MOTHER - PERMISSIVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_153_PERM">
+    <NewName>HS_153_PERM</NewName>
+    <Address>DIV00366</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1503</ModbusAddress>
+    <Comment>CHAMBER 1 DRAIN - PERMISSIVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_154">
+    <NewName>HS_154</NewName>
+    <Address>DIV00367</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1504</ModbusAddress>
+    <Comment>CHAMBER 1 SYSTEM SHUTDOWN</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_ALWAYS_ON">
+    <NewName>GBL_ALWAYS_ON</NewName>
+    <Address>DIV00368</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>203</ModbusAddress>
+    <Comment>ALWAYS ON BIT</Comment>
+    <InitalValue>1</InitalValue>
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_ALWAYS_OFF">
+    <NewName>GBL_ALWAYS_OFF</NewName>
+    <Address>DIV00369</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>201</ModbusAddress>
+    <Comment>ALWAYS OFF BIT</Comment>
+    <InitalValue>0</InitalValue>
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_POLL_TRIG">
+    <NewName>GBL_POLL_TRIG</NewName>
+    <Address>DIV00370</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>204</ModbusAddress>
+    <Comment>REMOTE I/O POLL TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_DUMMY_TAG">
+    <NewName>GBL_DUMMY_TAG</NewName>
+    <Address>DIV00371</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>205</ModbusAddress>
+    <Comment>DON'T RELY ON CONTENTS</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_SYS_INIT">
+    <NewName>GBL_SYS_INIT</NewName>
+    <Address>DIV00372</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>206</ModbusAddress>
+    <Comment>=1 WHEN SYSTEM VARIABLES INITIALIZED</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_SYS_RESET">
+    <NewName>GBL_SYS_RESET</NewName>
+    <Address>DIV00373</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>207</ModbusAddress>
+    <Comment>=1 WHEN SYSTEM VARIABLES SHOULD BE RE-INTIALIZED</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_HEART_BEAT">
+    <NewName>GBL_HEART_BEAT</NewName>
+    <Address>AIV00288</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>225</ModbusAddress>
+    <Comment>COUNTS UP EVERY SECOND</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_HEART_BEA_1">
+    <NewName>GBL_HEART_BEA_1</NewName>
+    <Address>AIV00381</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>226</ModbusAddress>
+    <Comment>COUNTS UP EVERY SECOND</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="LI_101_SP">
+    <NewName>LI_101_SP</NewName>
+    <Address>AIV00319</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1600</ModbusAddress>
+    <Comment>CHAMBER 1 RESERVOIR FILL SETPOINT</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XY_124LDB">
+    <NewName>XY_124LDB</NewName>
+    <Address>AIV00318</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1602</ModbusAddress>
+    <Comment>CHAMBER 1 R/O WATER CTRL LOW DEADBAND</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_155_PERM">
+    <NewName>HS_155_PERM</NewName>
+    <Address>DIV00374</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1505</ModbusAddress>
+    <Comment>CHAMBER 1 FILL NUTRIENTS - PERMISSIVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_156_PERM">
+    <NewName>HS_156_PERM</NewName>
+    <Address>DIV00375</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1506</ModbusAddress>
+    <Comment>CHAMBER 1 PH ADJUST - PERMISSIVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_157_PERM">
+    <NewName>HS_157_PERM</NewName>
+    <Address>DIV00376</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1507</ModbusAddress>
+    <Comment>CHAMBER 1 FEED VEG - PERMISSIVE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_FAL001_NF">
+    <NewName>GBL_FAL001_NF</NewName>
+    <Address>AIV00131</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>210</ModbusAddress>
+    <Comment>CITY RO WATER NO FLOW TIMER DELAY</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_FAL001">
+    <NewName>GBL_FAL001</NewName>
+    <Address>DIV00359</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>202</ModbusAddress>
+    <Comment>CITY WATER NO FLOW ALARM</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_ACK_ALMS">
+    <NewName>GBL_ACK_ALMS</NewName>
+    <Address>DIV00360</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>208</ModbusAddress>
+    <Comment>ACKNOWLEDGE AND RESET ALARMS</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="PAH_101_ALM_SP">
+    <NewName>PAH_101_ALM_SP</NewName>
+    <Address>AIV00340</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1604</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT FEED HI PRESS ALM HI SPT</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="PAH_101">
+    <NewName>PAH_101</NewName>
+    <Address>DIV00377</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1508</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT PRESSURE HIGH ALARM</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="AT_106_SP">
+    <NewName>AT_106_SP</NewName>
+    <Address>AIV00133</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1606</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT TANK pH SETPOINT</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_155H">
+    <NewName>HS_155H</NewName>
+    <Address>DIV00382</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1509</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT FILL REQUEST</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_156A">
+    <NewName>HS_156A</NewName>
+    <Address>DIV00383</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1510</ModbusAddress>
+    <Comment>CHAMBER 1 pH ADJUST REQUEST</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_UP_OFF_DUR">
+    <NewName>GBL_UP_OFF_DUR</NewName>
+    <Address>AIV00382</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>211</ModbusAddress>
+    <Comment>pH UP DISPENSE OFF DUR (s)</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_PH_UP_VOL">
+    <NewName>GBL_PH_UP_VOL</NewName>
+    <Address>AIV00383</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>216</ModbusAddress>
+    <Comment>pH UP VOLUME (mL)</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_PH_DWN_VOL">
+    <NewName>GBL_PH_DWN_VOL</NewName>
+    <Address>AIV00384</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>217</ModbusAddress>
+    <Comment>pH DOWN VOLUME (mL)</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_DWN_OFF_DUR">
+    <NewName>GBL_DWN_OFF_DUR</NewName>
+    <Address>AIV00386</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>219</ModbusAddress>
+    <Comment>pH DOWN DISPENSE OFF DUR (s)</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_101AVG">
+    <NewName>MT_101AVG</NewName>
+    <Address>AIV00327</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1608</ModbusAddress>
+    <Comment>CHAMBER 1 VEG MOISTURE AVERAGE</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_103AVG">
+    <NewName>MT_103AVG</NewName>
+    <Address>AIV00328</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1610</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER MOISTURE AVERAGE</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_101EN">
+    <NewName>MT_101EN</NewName>
+    <Address>DIV00378</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1511</ModbusAddress>
+    <Comment>CHAMBER 1 VEG MOISTURE TRANSMITTER 1 ENABLE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_102EN">
+    <NewName>MT_102EN</NewName>
+    <Address>DIV00387</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1512</ModbusAddress>
+    <Comment>CHAMBER 1 VEG MOISTURE TRANSMITTER 2 ENABLE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_103EN">
+    <NewName>MT_103EN</NewName>
+    <Address>DIV00388</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1513</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER MOISTURE TRANSMITTER 1 ENABLE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="MT_104EN">
+    <NewName>MT_104EN</NewName>
+    <Address>DIV00389</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1514</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER MOISTURE TRANSMITTER 2 ENABLE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KV_101_EN">
+    <NewName>KV_101_EN</NewName>
+    <Address>DIV00390</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1515</ModbusAddress>
+    <Comment>CHAMBER 1 VEG SCH ENABLED 1</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KV_102_EN">
+    <NewName>KV_102_EN</NewName>
+    <Address>DIV00391</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1516</ModbusAddress>
+    <Comment>CHAMBER 1 VEG SCH ENABLED 2</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KV_103_EN">
+    <NewName>KV_103_EN</NewName>
+    <Address>DIV00392</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1517</ModbusAddress>
+    <Comment>CHAMBER 1 VEG SCH ENABLED 3</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KV_104_EN">
+    <NewName>KV_104_EN</NewName>
+    <Address>DIV00393</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1518</ModbusAddress>
+    <Comment>CHAMBER 1 VEG SCH ENABLED 4</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KM_101_EN">
+    <NewName>KM_101_EN</NewName>
+    <Address>DIV00394</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1519</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER SCH ENABLED 1</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KM_102_EN">
+    <NewName>KM_102_EN</NewName>
+    <Address>DIV00395</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1520</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER SCH ENABLED 2</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KM_103_EN">
+    <NewName>KM_103_EN</NewName>
+    <Address>DIV00396</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1521</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER SCH ENABLED 3</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KM_104_EN">
+    <NewName>KM_104_EN</NewName>
+    <Address>DIV00397</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1522</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER SCH ENABLED 4</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KM_105_EN">
+    <NewName>KM_105_EN</NewName>
+    <Address>DIV00398</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1523</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER SCH ENABLED 5</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KM_106_EN">
+    <NewName>KM_106_EN</NewName>
+    <Address>DIV00399</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1524</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER SCH ENABLED 6</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KM_107_EN">
+    <NewName>KM_107_EN</NewName>
+    <Address>DIV00400</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1525</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER SCH ENABLED 7</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KM_108_EN">
+    <NewName>KM_108_EN</NewName>
+    <Address>DIV00401</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1526</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER SCH ENABLED 8</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_TEST_FEED">
+    <NewName>GBL_TEST_FEED</NewName>
+    <Address>DIV00361</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>209</ModbusAddress>
+    <Comment>=1 TEST FEED TIME</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_SUSPEND_IO">
+    <NewName>GBL_SUSPEND_IO</NewName>
+    <Address>DIV00362</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>223</ModbusAddress>
+    <Comment>=1 SUSPEND SIGNAL CONDITIONING</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="PDAH_101_ALM_SP">
+    <NewName>PDAH_101_ALM_SP</NewName>
+    <Address>AIV00350</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1612</ModbusAddress>
+    <Comment>CHAMBER 1 FILTER PRESS DIFFERENTIAL ALM HI SPT</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="PDAH_101">
+    <NewName>PDAH_101</NewName>
+    <Address>DIV00402</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1527</ModbusAddress>
+    <Comment>CHAMBER 1 FILTER PRESS DIFFERENTIAL HIGH ALARM</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="TIC_109_NSP">
+    <NewName>TIC_109_NSP</NewName>
+    <Address>AIV00351</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1614</ModbusAddress>
+    <Comment>CHAMBER 1 COOLING NIGHT SETPOINT</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="TIC_109_DSP">
+    <NewName>TIC_109_DSP</NewName>
+    <Address>AIV00352</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1616</ModbusAddress>
+    <Comment>CHAMBER 1 COOLING DAY SETPOINT</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="TIC_110_NSP">
+    <NewName>TIC_110_NSP</NewName>
+    <Address>AIV00353</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1618</ModbusAddress>
+    <Comment>CHAMBER 1 HEATING NIGHT SETPOINT</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="TIC_110_DSP">
+    <NewName>TIC_110_DSP</NewName>
+    <Address>AIV00354</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1620</ModbusAddress>
+    <Comment>CHAMBER 1 HEATING DAY SETPOINT</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HIC_103_NSP">
+    <NewName>HIC_103_NSP</NewName>
+    <Address>AIV00355</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1622</ModbusAddress>
+    <Comment>CHAMBER 1 DEHUMIDIFIER NIGHT SETPOINT</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HIC_103_DSP">
+    <NewName>HIC_103_DSP</NewName>
+    <Address>AIV00356</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1624</ModbusAddress>
+    <Comment>CHAMBER 1 DEHUMIDIFIER DAY SETPOINT</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HIC_104_NSP">
+    <NewName>HIC_104_NSP</NewName>
+    <Address>AIV00357</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1626</ModbusAddress>
+    <Comment>CHAMBER 1 HUMIDIFIER NIGHT SETPOINT</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HIC_104_DSP">
+    <NewName>HIC_104_DSP</NewName>
+    <Address>AIV00358</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1628</ModbusAddress>
+    <Comment>CHAMBER 1 HUMIDIFIER DAY SETPOINT</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="XIC_125_SP">
+    <NewName>XIC_125_SP</NewName>
+    <Address>AIV00138</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1630</ModbusAddress>
+    <Comment>CHAMBER 1 CO2 CONTROLLER SETPOINT</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_107SS_EVT">
+    <NewName>HS_107SS_EVT</NewName>
+    <Address>DIV00404</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1528</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER SUNSET EVENT</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_107LON_EVT">
+    <NewName>HS_107LON_EVT</NewName>
+    <Address>DIV00405</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1529</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER LIGHT ON EVENT</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_107FSR">
+    <NewName>HS_107FSR</NewName>
+    <Address>DIV00406</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1530</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER FORCE SUNRISE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_107FST">
+    <NewName>HS_107FST</NewName>
+    <Address>DIV00407</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1531</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER FORCE SUNSET</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KM_168_ULI">
+    <NewName>KM_168_ULI</NewName>
+    <Address>DIV00408</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1532</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER UPDATE LIGHT INTENSITY</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_107SR_EVT">
+    <NewName>HS_107SR_EVT</NewName>
+    <Address>DIV00409</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1533</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER SUNRISE EVENT</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KM_168_FLI">
+    <NewName>KM_168_FLI</NewName>
+    <Address>DIV00410</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1534</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER FORCE LIGHT INTENSITY</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KV_169_FLI">
+    <NewName>KV_169_FLI</NewName>
+    <Address>DIV00411</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1535</ModbusAddress>
+    <Comment>CHAMBER 1 VEG FORCE LIGHT INTENSITY</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KV_169_ULI">
+    <NewName>KV_169_ULI</NewName>
+    <Address>DIV00412</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1536</ModbusAddress>
+    <Comment>CHAMBER 1 VEG UPDATE LIGHT INTENSITY</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_108FSR">
+    <NewName>HS_108FSR</NewName>
+    <Address>DIV00413</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1537</ModbusAddress>
+    <Comment>CHAMBER 1 VEG  FORCE SUNRISE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_108FST">
+    <NewName>HS_108FST</NewName>
+    <Address>DIV00414</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1538</ModbusAddress>
+    <Comment>CHAMBER 1 VEG FORCE SUNSET</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_108LON_EVT">
+    <NewName>HS_108LON_EVT</NewName>
+    <Address>DIV00415</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1539</ModbusAddress>
+    <Comment>CHAMBER 1 VEG LIGHT ON EVENT</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_108SR_EVT">
+    <NewName>HS_108SR_EVT</NewName>
+    <Address>DIV00416</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1540</ModbusAddress>
+    <Comment>CHAMBER 1 VEG SUNRISE EVENT</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_108SS_EVT">
+    <NewName>HS_108SS_EVT</NewName>
+    <Address>DIV00417</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1541</ModbusAddress>
+    <Comment>CHAMBER 1 VEG SUNSET EVENT</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_115FSR">
+    <NewName>HS_115FSR</NewName>
+    <Address>DIV00418</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1542</ModbusAddress>
+    <Comment>CHAMBER 1 CLONE FORCE SUNRISE</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_115FST">
+    <NewName>HS_115FST</NewName>
+    <Address>DIV00419</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1543</ModbusAddress>
+    <Comment>CHAMBER 1 CLONE FORCE SUNSET</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_115LON_EVT">
+    <NewName>HS_115LON_EVT</NewName>
+    <Address>DIV00420</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1544</ModbusAddress>
+    <Comment>CHAMBER 1 CLONE LIGHT ON EVENT</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_115SR_EVT">
+    <NewName>HS_115SR_EVT</NewName>
+    <Address>DIV00421</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1545</ModbusAddress>
+    <Comment>CHAMBER 1 CLONE SUNRISE EVENT</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_115SS_EVT">
+    <NewName>HS_115SS_EVT</NewName>
+    <Address>DIV00422</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1546</ModbusAddress>
+    <Comment>CHAMBER 1 CLONE SUNSET EVENT</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KC_170_FLI">
+    <NewName>KC_170_FLI</NewName>
+    <Address>DIV00423</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1547</ModbusAddress>
+    <Comment>CHAMBER 1 CLONE FORCE LIGHT INTENSITY</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KC_170_ULI">
+    <NewName>KC_170_ULI</NewName>
+    <Address>DIV00424</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1548</ModbusAddress>
+    <Comment>CHAMBER 1 CLONE UPDATE LIGHT INTENSITY</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="HS_115">
+    <NewName>HS_115</NewName>
+    <Address>DIV00425</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1057</ModbusAddress>
+    <Comment>CHAMBER 1 CLONE LIGHT ON/OFF</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="IS_101_DAY">
+    <NewName>IS_101_DAY</NewName>
+    <Address>DIV00426</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1549</ModbusAddress>
+    <Comment>CHAMBER 1 DAY FLAG (=1 DAYTIME,0=NIGHTTIME)</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KV_169_ULI_">
+    <NewName>KV_169_ULI_</NewName>
+    <Address>DIV00403</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10153</ModbusAddress>
+    <Comment>CHAMBER 1 VEG UPDATE LIGHT INTENSITY</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KV_169_BLUE_">
+    <NewName>KV_169_BLUE_</NewName>
+    <Address>AIV00139</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10152</ModbusAddress>
+    <Comment>CHAMBER 1 VEG LIGHTS HAND BLUE INTENSITY</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KV_169_RED_">
+    <NewName>KV_169_RED_</NewName>
+    <Address>AIV00140</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10150</ModbusAddress>
+    <Comment>CHAMBER 1 VEG LIGHTS HAND RED INTENSITY</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="KV_169_WHITE_">
+    <NewName>KV_169_WHITE_</NewName>
+    <Address>AIV00141</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10151</ModbusAddress>
+    <Comment>CHAMBER 1 VEG LIGHTS HAND WHITE INTENSITY</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\RIO_1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_PH_CT">
+    <NewName>RIO_1_PH_CT</NewName>
+    <Address>DIV00427</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10028</ModbusAddress>
+    <Comment>RIO1 PH RES1 COMMUNICATION TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_PH_CC">
+    <NewName>RIO_1_PH_CC</NewName>
+    <Address>AIV00142</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10010</ModbusAddress>
+    <Comment>RIO1 PH RES1 COMMUNICATION CYCLE COUNT</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_PH_CE">
+    <NewName>RIO_1_PH_CE</NewName>
+    <Address>DIV00428</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10011</ModbusAddress>
+    <Comment>RIO1 PH RES1 COMMUNICATION ERROR</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_PH_ST">
+    <NewName>RIO_1_PH_ST</NewName>
+    <Address>AIV00143</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10012</ModbusAddress>
+    <Comment>RIO1 PH RES1 COMMUNICATION STATUS</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_EC_CT">
+    <NewName>RIO_1_EC_CT</NewName>
+    <Address>DIV00513</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10032</ModbusAddress>
+    <Comment>RIO1 EC RES1 COMMUNICATION TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_EC_CC">
+    <NewName>RIO_1_EC_CC</NewName>
+    <Address>AIV00594</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10033</ModbusAddress>
+    <Comment>RIO1 EC RES1 COMMUNICATION CYCLE COUNT</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_EC_CE">
+    <NewName>RIO_1_EC_CE</NewName>
+    <Address>DIV00514</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10034</ModbusAddress>
+    <Comment>RIO1 EC RES1 COMMUNICATION ERROR</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_1_EC_ST">
+    <NewName>RIO_1_EC_ST</NewName>
+    <Address>AIV00595</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10035</ModbusAddress>
+    <Comment>RIO1 EC RES1 COMMUNICATION STATUS</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_2_PH_CT">
+    <NewName>RIO_2_PH_CT</NewName>
+    <Address>DIV00515</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10036</ModbusAddress>
+    <Comment>RIO2 PH RES2 COMMUNICATION TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_2_PH_CC">
+    <NewName>RIO_2_PH_CC</NewName>
+    <Address>AIV00596</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10037</ModbusAddress>
+    <Comment>RIO2 PH RES2 COMMUNICATION CYCLE COUNT</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_2_PH_CE">
+    <NewName>RIO_2_PH_CE</NewName>
+    <Address>DIV00516</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10038</ModbusAddress>
+    <Comment>RIO2 PH RES2 COMMUNICATION ERROR</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_2_PH_ST">
+    <NewName>RIO_2_PH_ST</NewName>
+    <Address>AIV00597</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10039</ModbusAddress>
+    <Comment>RIO2 PH RES2 COMMUNICATION STATUS</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_2_EC_CT">
+    <NewName>RIO_2_EC_CT</NewName>
+    <Address>DIV00517</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10040</ModbusAddress>
+    <Comment>RIO2 EC RES2 COMMUNICATION TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_2_EC_CC">
+    <NewName>RIO_2_EC_CC</NewName>
+    <Address>AIV00598</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10041</ModbusAddress>
+    <Comment>RIO2 EC RES2 COMMUNICATION CYCLE COUNT</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_2_EC_CE">
+    <NewName>RIO_2_EC_CE</NewName>
+    <Address>DIV00518</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10042</ModbusAddress>
+    <Comment>RIO2 EC RES2 COMMUNICATION ERROR</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_2_EC_ST">
+    <NewName>RIO_2_EC_ST</NewName>
+    <Address>AIV00599</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10043</ModbusAddress>
+    <Comment>RIO2 EC RES2 COMMUNICATION STATUS</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_3_PH_CT">
+    <NewName>RIO_3_PH_CT</NewName>
+    <Address>DIV00519</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10044</ModbusAddress>
+    <Comment>RIO3 PH RES3 COMMUNICATION TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_3_PH_CC">
+    <NewName>RIO_3_PH_CC</NewName>
+    <Address>AIV00600</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10045</ModbusAddress>
+    <Comment>RIO3 PH RES3 COMMUNICATION CYCLE COUNT</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_3_PH_CE">
+    <NewName>RIO_3_PH_CE</NewName>
+    <Address>DIV00520</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10046</ModbusAddress>
+    <Comment>RIO3 PH RES3 COMMUNICATION ERROR</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_3_PH_ST">
+    <NewName>RIO_3_PH_ST</NewName>
+    <Address>AIV00601</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10047</ModbusAddress>
+    <Comment>RIO3 PH RES3 COMMUNICATION STATUS</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_3_EC_CT">
+    <NewName>RIO_3_EC_CT</NewName>
+    <Address>DIV00521</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10048</ModbusAddress>
+    <Comment>RIO3 EC RES3 COMMUNICATION TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_3_EC_CC">
+    <NewName>RIO_3_EC_CC</NewName>
+    <Address>AIV00602</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10049</ModbusAddress>
+    <Comment>RIO3 EC RES3 COMMUNICATION CYCLE COUNT</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_3_EC_CE">
+    <NewName>RIO_3_EC_CE</NewName>
+    <Address>DIV00522</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10050</ModbusAddress>
+    <Comment>RIO3 EC RES3 COMMUNICATION ERROR</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_3_EC_ST">
+    <NewName>RIO_3_EC_ST</NewName>
+    <Address>AIV00603</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10051</ModbusAddress>
+    <Comment>RIO3 EC RES3 COMMUNICATION STATUS</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_4_PH_CT">
+    <NewName>RIO_4_PH_CT</NewName>
+    <Address>DIV00523</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10052</ModbusAddress>
+    <Comment>RIO4 PH RES4 COMMUNICATION TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_4_PH_CC">
+    <NewName>RIO_4_PH_CC</NewName>
+    <Address>AIV00604</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10053</ModbusAddress>
+    <Comment>RIO4 PH RES4 COMMUNICATION CYCLE COUNT</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_4_PH_CE">
+    <NewName>RIO_4_PH_CE</NewName>
+    <Address>DIV00524</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10054</ModbusAddress>
+    <Comment>RIO4 PH RES4 COMMUNICATION ERROR</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_4_PH_ST">
+    <NewName>RIO_4_PH_ST</NewName>
+    <Address>AIV00605</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10055</ModbusAddress>
+    <Comment>RIO4 PH RES4 COMMUNICATION STATUS</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_4_EC_CT">
+    <NewName>RIO_4_EC_CT</NewName>
+    <Address>DIV00525</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10056</ModbusAddress>
+    <Comment>RIO4 EC RES4 COMMUNICATION TRIGGER</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_4_EC_CC">
+    <NewName>RIO_4_EC_CC</NewName>
+    <Address>AIV00606</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10057</ModbusAddress>
+    <Comment>RIO4 EC RES4 COMMUNICATION CYCLE COUNT</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_4_EC_CE">
+    <NewName>RIO_4_EC_CE</NewName>
+    <Address>DIV00526</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>10058</ModbusAddress>
+    <Comment>RIO4 EC RES4 COMMUNICATION ERROR</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="RIO_4_EC_ST">
+    <NewName>RIO_4_EC_ST</NewName>
+    <Address>AIV00607</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>10059</ModbusAddress>
+    <Comment>RIO4 EC RES4 COMMUNICATION STATUS</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>REMOTE IO\COMMUNICATIONS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="LT_101_SCLD">
+    <NewName>LT_101_SCLD</NewName>
+    <Address>AIV00624</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1632</ModbusAddress>
+    <Comment>CHAMBER 1 SCALING CORRECTION FOR LT_001</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="FAL_101">
+    <NewName>FAL_101</NewName>
+    <Address>DIV00536</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>1551</ModbusAddress>
+    <Comment>CHAMBER 1 NUTRIENT FEED FLOW LOW ALARM</Comment>
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_HS_x09_TMR">
+    <NewName>GBL_HS_x09_TMR</NewName>
+    <Address>AIV00628</Address>
+    <Format>16BITS</Format>
+    <ModbusAddress>238</ModbusAddress>
+    <Comment>AC CONDENSER STOP DURATION PRESET (s)</Comment>
+    <InitalValue />
+    <Signed>False</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="FT_101VTSCADA">
+    <NewName>FT_101VTSCADA</NewName>
+    <Address>AIV00633</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1634</ModbusAddress>
+    <Comment>CHAMBER 1 VEG FEED FLOW TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="FT_001_DBC">
+    <NewName>FT_001_DBC</NewName>
+    <Address>AIV00637</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>5020</ModbusAddress>
+    <Comment>NUTRIENT CENTER CITY WATER FILL FLOW DEBOUNCED</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>DRY CURE DOSING</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="FT_102">
+    <NewName>FT_102</NewName>
+    <Address>AIV00641</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1026</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER NUTRIENT FEED FLOW TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="FT_102VTSCADA">
+    <NewName>FT_102VTSCADA</NewName>
+    <Address>AIV00642</Address>
+    <Format>FLOAT</Format>
+    <ModbusAddress>1636</ModbusAddress>
+    <Comment>CHAMBER 1 MOTHER FEED FLOW TRANSMITTER</Comment>
+    <InitalValue />
+    <Signed>True</Signed>
+    <TextTagSize />
+    <Minimum>0</Minimum>
+    <Maximum>1000</Maximum>
+    <Resolution>1</Resolution>
+    <Group>CHAMBER 1\SOFTS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+  <Tag Name="GBL_POLL_TRIG2">
+    <NewName>GBL_POLL_TRIG2</NewName>
+    <Address>DIV00542</Address>
+    <Format>DIGITAL</Format>
+    <ModbusAddress>210</ModbusAddress>
+    <Comment />
+    <InitalValue />
+    <Signed />
+    <TextTagSize />
+    <Minimum />
+    <Maximum />
+    <Resolution />
+    <Group>GLOBALS</Group>
+    <Presentation Description="" StateOn="" StateOff="" Units="" NbrDecimals="">False</Presentation>
+    <WriteAllowed WriteAllowed_Minimum="" WriteAllowed_Maximum="">False</WriteAllowed>
+    <DisplayFormat>DECIMAL</DisplayFormat>
+  </Tag>
+</TWinSoftTags>
