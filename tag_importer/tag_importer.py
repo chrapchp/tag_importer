@@ -3,6 +3,7 @@ import pandas as pd
 #import argparse
 #import sys
 import logging
+import os
 
 import click
 
@@ -67,9 +68,20 @@ def generate(ctx, pattern,tag_type):
     else:
         logger.error('Invalid tag_type: ' + tag_type + ' for generate command. local | remote')
 
+@main.command()
+@click.option('--tag_filter', required=False, default=r"^.+\d.+", help='Twinsoft Tag Name filter regex pattern Default: .+')
+@click.option('--group_filter', required=True, help='Twinsoft Group  regex pattern')
+@click.option('--recurse/--no-recurse', default=True, help='Recurse Folder e.g. CHAMBER 1 and CHAMBER 1/SOFTS. default:--recurse')
+@click.pass_context
+def create(ctx, tag_filter, group_filter,recurse):
+    sgroup_filter = group_filter
+    if not recurse:
+        sgroup_filter = "^"+group_filter+"$"
+    ctx.obj['twinsoft_processor'].create( tag_filter, sgroup_filter)
+    logger.info('Create operation completed.')
 
 @main.command()
-@click.option('--tag_filter', required=False, help='Twinsoft Tag Name filter regex pattern Default: .+')
+@click.option('--tag_filter', required=False, default=r"^.+\d.+", help='Twinsoft Tag Name filter regex pattern Default: .+')
 @click.option('--group_filter', required=True, help='Twinsoft Group  regex pattern')
 @click.option('--dest', required=False, help='Destination Folder in Twinsoft. If not provided, mirror group_filter pattern')
 @click.option('--loop', required=True, help='Loop number to ensure tags and groups are unique')
@@ -122,15 +134,14 @@ def clone(ctx, tag_filter, group_filter, dest, loop, offset, replace_pattern,rec
 
 
     '''
-    spattern = tag_filter
+
     sreplace_pattern = replace_pattern
     sgroup_filter = group_filter
     
     if not recurse:
         sgroup_filter = "^"+group_filter+"$"
 
-    if tag_filter is None:
-        spattern = "^.+\d.+"
+
     if group_find is not None and group_replace is None:
         raise ExcelProcessorError("option --group_replace required")
 
@@ -138,7 +149,7 @@ def clone(ctx, tag_filter, group_filter, dest, loop, offset, replace_pattern,rec
         sreplace_pattern = "\d"
 
     ctx.obj['twinsoft_processor'].clone(
-        spattern, sgroup_filter, dest, offset, loop, sreplace_pattern,blind_validation,group_find, group_replace)
+        tag_filter, sgroup_filter, dest, offset, loop, sreplace_pattern,blind_validation,group_find, group_replace)
     logger.info('Clone operation completed.')
 
 
@@ -188,7 +199,8 @@ def tabulate(ctx, item,mapped):
 
     if x is not None:
         logger.info(log_message + '\n{}'.format(x))
-        x.to_clipboard()
+        if os.name != 'POSIX':
+            x.to_clipboard()
     else:
         logger.error('Invalid item \'' + item + '\' tabulate command')
 
@@ -208,3 +220,6 @@ if __name__ == '__main__':
     except TwinsoftError as e:
         logger.error('{} Error Code: {}'. format(
             str(e), str(e.extended_error)))
+    #except pd.io.clipboard.PyperclipException as e:
+    #    logger.warning("Clipboard not install in POSIX build. to_clipboard()" )
+

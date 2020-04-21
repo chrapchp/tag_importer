@@ -349,7 +349,7 @@ class TwinsoftProcessor:
         x = pd.merge(x, map_df, left_on=[
             'Group'], right_on=['TS_GROUP'], how='left')
         x.drop(['CLASS', 'TAG_NAME',  'TAG_PATTERN',
-                'DESCRIPTION', 'TEMPLATE'],  axis=1, inplace=True)
+                'DESCRIPTION', 'TEMPLATE','ADDRESS','TAG_INITIAL_VALUE','TAG_TYPE'],  axis=1, inplace=True)
         self.__logger.debug("{}()\n{}".format(
             self.get_twinsoft_export_summary.__name__, x))
         if to_memory_map == True:
@@ -447,7 +447,6 @@ class TwinsoftProcessor:
             raise TwinsoftError('\nGenerated Descriptions for Tag Names \n' + str(list(t['TAG'])) + '\ngreather than ' + str(
                 TwinsoftProcessor.TW_TAG_MAX_DESC_LEN) + ' characters. Consider shortening the template description or tag description prefix.', TwinsoftError.TE_TAG_DESC_TOO_LONG)
 
-
         # check if group and sub groups lengths are too long
 
         gen_df['GROUP_ERR_CNT'] = gen_df.apply(
@@ -459,12 +458,9 @@ class TwinsoftProcessor:
             ), TwinsoftProcessor.TW_MAX_GROUP_NAME_LEN), TwinsoftError.TE_MAP_GROUP_TOO_LONG)
         gen_df.drop(['GROUP_ERR_CNT'], axis=1, inplace=True)
 
-
-
         self.__validate_gen_df_addresses(gen_df, blind_validation)
         # check for duplicate calculated modbus addresses for DIGITALS and NON-DIGITAL TAGS
 
-        
         subset_df = gen_df[gen_df['MEM_TYPE'] == 'BOOL'].copy()
 
         dups = subset_df.duplicated(subset=['CALC_ADDRESS'])
@@ -480,8 +476,9 @@ class TwinsoftProcessor:
 
     def __generate_addressing(self, pending_tags_df):
         export_summary = self.get_twinsoft_export_summary()
+        export_summary.to_clipboard()
         export_summary.dropna(axis=0, inplace=True)
-
+        
         #
         # e.g. entry 0 requries a tag XY_110_OCA to be created with template starting at 1400 but CHAMBER 1\LOCALS has a tags starting at 1700
         #       the new tag will be generated starting at 1837 + 1 rather than 1400
@@ -545,9 +542,10 @@ class TwinsoftProcessor:
         self.__logger.debug("{}() - gen_tags_merged-data types\n{}".format(
             self.get_twinsoft_export_summary.__name__, gen_tags_merged.dtypes))
 
-        self.__validate_gen_df(gen_tags_merged)
         gen_tags_merged.rename(
             {'TS_GROUP_y': 'TS_GROUP'}, axis=1, inplace=True)
+        self.__validate_gen_df(gen_tags_merged)
+
         self.__to_twinsoft_xml(gen_tags_merged)
 
     def generate_remote_tags(self, pattern):
@@ -644,14 +642,7 @@ class TwinsoftProcessor:
         #clone_df['FOLDER'] = clone_df['Group']
         clone_df.rename({'Tag': 'TAG', 'Comment': 'DESCRIPTION', 'Format': 'TS_FORMAT',
                          'Signed': 'TS_SIGNED', 'InitalValue': 'INITIAL_VALUE',  'ModbusAddress': 'CALC_ADDRESS'}, axis=1, inplace=True)
-        # self.__validate_gen_df_addresses(clone_df)
-        # clone_df.rename({'Tag': 'TAG', 'Comment': 'DESCRIPTION', 'Format': 'TS_FORMAT',
-        #                 'Signed': 'TS_SIGNED', 'InitalValue': 'INITIAL_VALUE',  'ModbusAddress': 'CALC_ADDRESS'}, axis=1, inplace=True)
-        # clone_df['FORMAT'] = clone_df.apply(
-        #    lambda x: self.__to_format(x['TS_FORMAT'], x['TS_SIGNED']), axis=1)
-        # print(clone_df['M'])
-        #print(clone_df[['TAG', 'MEM_ID','TS_FORMAT','TS_SIGNED']])
-        # print(self.__xl_memory_map_df[['MEM_ID','TS_FORMAT','TS_SIGNED']])
+
         clone_df['TS_SIGNED'] = clone_df['TS_SIGNED'] == 'True'
         clone_df = clone_df.astype({'TS_SIGNED': 'bool'}, copy=True)
         clone_df = pd.merge(clone_df, self.__xl_memory_map_df, left_on=[
@@ -663,3 +654,30 @@ class TwinsoftProcessor:
                 tag_filter, group_filter), TwinsoftError.TE_PATTERN_NOT_FOUND)
         self.__validate_gen_df(clone_df, blind_validation=blind_validation)
         self.__to_twinsoft_xml(clone_df)
+
+    def create(self, tag_filter, group_filter):
+        self.load_data()
+        #df = self.__twinsoft_tags_df
+
+        create_df = self.__xl_tags_df[(self.__xl_tags_df.CLASS == 'BASE') & (self.__xl_tags_df['TAG_NAME'].str.contains(
+            tag_filter, regex=True)) & (self.__xl_tags_df['TS_GROUP'].str.contains(group_filter, regex=True))].copy()
+
+
+        # join tag list and memory 
+        create_df = pd.merge(create_df, self.__xl_memory_map_df, left_on=['MEM_ID','TAG_TYPE'], right_on=['MEM_ID','MEM_TYPE'], how='left')
+        errs = create_df[create_df['MEM_TYPE'].isna()]
+        if errs.shape[0] > 0:
+            raise TwinsoftError('Mem_ID for tags \n{}\n not found or missing in MEMORY_MAP\n'.format(errs[['TAG_NAME','TS_GROUP','MEM_ID']]), TwinsoftError.TE_TAGS_EXIST)
+
+        errs = pd.merge(self.__twinsoft_tags_df, create_df, left_on=['Tag'], right_on=['TAG_NAME'])
+
+        if errs.shape[0]>0:
+            raise TwinsoftError('\nTags: \n{} \nalready exist in Twinsoft export file\n'.format(errs['TAG_NAME'].to_string()), TwinsoftError.TE_TAGS_EXIST)
+        
+        create_df.rename({'TAG_NAME': 'TAG','TAG_INITIAL_VALUE': 'INITIAL_VALUE'}, axis=1, inplace=True)     
+        #print(create_df)  
+        self.__generate_addressing(create_df) 
+    
+
+        #print(create_df)
+        #self.__validate_gen_df(create_df)
