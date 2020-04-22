@@ -476,7 +476,6 @@ class TwinsoftProcessor:
 
     def __generate_addressing(self, pending_tags_df):
         export_summary = self.get_twinsoft_export_summary()
-        export_summary.to_clipboard()
         export_summary.dropna(axis=0, inplace=True)
         
         #
