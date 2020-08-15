@@ -229,7 +229,7 @@ class TwinsoftProcessor:
             raise TwinsoftError('Duplicate TAG_NATAG_PATTERNME defined in Sheet ' + ExcelProcessor.EXCEL_TAG_SHEET + ' in file ' + self.xl_processor.xl_file_name + '\n' + str(subset_df.loc[dups][[
                                 'CLASS', 'TAG_PATTERN']]) + '\n', TwinsoftError.TE_DUPLICATE_TAG_NAME)
 
-    def load_and_validate_memory_map(self):
+    def load_and_validate_memory_map(self,ignore_errors):
         self.__logger.info("Loading Memory Map...")
 
         self.__xl_memory_map_df = self.xl_processor.memory_map_df
@@ -266,19 +266,21 @@ class TwinsoftProcessor:
                                                         'CONFLICT_GROUP': nrow['MEM_ID'], 'CONFLICT_FORMAT': nrow['MEM_TYPE'], 'CONFLICT_START_ADDR': int(nrow[
                                                             'START_ADDRESS']), 'CONFLICT_END_ADDR': int(nrow['END_ADDRESS'])
                                                         }, ignore_index=True)
-        if err_df.shape[0] > 0:
-            raise TwinsoftError("Memory Map Conflict:\n{}\n".format(
-                err_df), TwinsoftError.TE_MEMORY_MAP_CONFLICT)
+        if not ignore_errors:                                                            
+            if err_df.shape[0] > 0:
+                raise TwinsoftError("Memory Map Conflict:\n{}\n".format(
+                    err_df), TwinsoftError.TE_MEMORY_MAP_CONFLICT)
 
-    def load_data(self):
+    def load_data(self, ignore_errors=False):
 
         self.load_validate_tags()
-        self.load_and_validate_memory_map()
+        self.load_and_validate_memory_map(ignore_errors)
         self.__logger.info("Loading Template...")
         self.__xl_template_df = self.xl_processor.template_df
         self.load_twinsoft_xml()
 
     def __as_memory_map(self, df):
+ 
         df.rename(columns={"MB_MIN": "START_ADDRESS",
                            "Format": "TS_FORMAT", "Signed": "TS_SIGNED"}, inplace=True)
         now = datetime.now()
@@ -471,8 +473,10 @@ class TwinsoftProcessor:
         subset_df = gen_df[gen_df['MEM_TYPE'] != 'BOOL'].copy()
         dups = subset_df.duplicated(subset=['CALC_ADDRESS'])
         if dups.any():
+            #print("ere")
+            #print(subset_df.loc[dups])
             raise TwinsoftError('Duplicate ANALOG addresses generated for the following: \n' + str(subset_df.loc[dups][[
-                                'TAG', 'CALC_ADDRESS', 'MEM_TYPE', 'TS_GROUP_x']]) + '\n', TwinsoftError.TE_DUPLICATE_ANALOG_ADDR)
+                                'TAG', 'CALC_ADDRESS', 'MEM_TYPE', 'TS_GROUP']]) + '\n', TwinsoftError.TE_DUPLICATE_ANALOG_ADDR)
 
     def __generate_addressing(self, pending_tags_df):
         export_summary = self.get_twinsoft_export_summary()
@@ -550,8 +554,8 @@ class TwinsoftProcessor:
     def generate_remote_tags(self, pattern):
         self.__logger.info("Remote Tag functionality not yet.")
 
-    def generate_tags(self, pattern):
-        self.load_data()
+    def generate_tags(self, pattern, ignore_map_errors):
+        self.load_data(ignore_map_errors)
 
         self.__logger.info("Generatings Tags for pattern <" + pattern + ">...")
         pattern_df = self.__xl_tags_df[(self.__xl_tags_df.CLASS == 'GENERATE') & (
@@ -606,8 +610,8 @@ class TwinsoftProcessor:
 
         self.__generate_addressing(pattern_df)
 
-    def clone(self, tag_filter, group_filter, dest, address_offset, loop_no, replace_pattern, blind_validation, group_pattern=None, group_replace=None):
-        self.load_data()
+    def clone(self, tag_filter, group_filter, dest, address_offset, loop_no, replace_pattern, blind_validation, group_pattern=None, group_replace=None,ignore_map_errors=None):
+        self.load_data(ignore_map_errors)
         df = self.__twinsoft_tags_df
 
         clone_df = df[(df['Tag'].str.contains(tag_filter, regex=True)) & (
@@ -651,7 +655,8 @@ class TwinsoftProcessor:
         if clone_df.shape[0] == 0:
             raise TwinsoftError("tag_filter: {0} and/or group_filter: {1} did not find anything to clone.\n".format(
                 tag_filter, group_filter), TwinsoftError.TE_PATTERN_NOT_FOUND)
-        self.__validate_gen_df(clone_df, blind_validation=blind_validation)
+        if not ignore_map_errors:
+            self.__validate_gen_df(clone_df, blind_validation=blind_validation)
         self.__to_twinsoft_xml(clone_df)
 
     def create(self, tag_filter, group_filter):

@@ -45,8 +45,9 @@ def main(ctx, excel, xmlin, xmlout, verbose):
 @main.command()
 @click.option('--pattern', required=True, help='Generate Tags for a given TAG_PATTERN defined in excel TAGS tab')
 @click.option('--tag_type', required=False, help='local | remote', default='local')
+@click.option('--ignore_map_errors/--no-ignore_map_errors', required=False, help='ignore mapping errors', default=False)
 @click.pass_context
-def generate(ctx, pattern,tag_type):
+def generate(ctx, pattern,tag_type,ignore_map_errors):
     '''
     Generate tags using pattern defined in XL
     '''
@@ -60,7 +61,7 @@ def generate(ctx, pattern,tag_type):
         logger.info(
             '\'^C11.+\'             -> Start C11 followed by 1 or more characters e.g C11_LS_100')
     elif tag_type=='local':
-        ctx.obj['twinsoft_processor'].generate_tags(pattern)
+        ctx.obj['twinsoft_processor'].generate_tags(pattern,ignore_map_errors)
         logger.info('Generate tags operation completed.')
     elif tag_type=='remote':
         ctx.obj['twinsoft_processor'].generate_remote_tags(pattern)
@@ -91,8 +92,9 @@ def create(ctx, tag_filter, group_filter,recurse):
 @click.option('--blind_validation/--no-blind_validation', default=False, help='Force Validation of cloned addresses against memory map')
 @click.option('--group_find', required=False, default=None, help='Find group_find and replace with group_replace')
 @click.option('--group_replace', required=False, default=None, help='Find group_find and replace with group_replace')
+@click.option('--ignore_map_errors/--no-ignore_map_errors', required=False, default=False, help='ignore mapping errors')
 @click.pass_context
-def clone(ctx, tag_filter, group_filter, dest, loop, offset, replace_pattern,recurse,blind_validation,group_find,group_replace):
+def clone(ctx, tag_filter, group_filter, dest, loop, offset, replace_pattern,recurse,blind_validation,group_find,group_replace,ignore_map_errors):
     '''
     Clone folder from twinsoft export XML file
 
@@ -149,7 +151,7 @@ def clone(ctx, tag_filter, group_filter, dest, loop, offset, replace_pattern,rec
         sreplace_pattern = "\d"
 
     ctx.obj['twinsoft_processor'].clone(
-        tag_filter, sgroup_filter, dest, offset, loop, sreplace_pattern,blind_validation,group_find, group_replace)
+        tag_filter, sgroup_filter, dest, offset, loop, sreplace_pattern,blind_validation,group_find, group_replace,ignore_map_errors)
     logger.info('Clone operation completed.')
 
 
