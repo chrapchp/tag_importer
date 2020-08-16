@@ -82,7 +82,7 @@ def create(ctx, tag_filter, group_filter,recurse):
 
 @main.command()
 @click.option('--tag_filter', required=False, default=r"^.+\d.+", help='Twinsoft Tag Name filter regex pattern Default: .+')
-@click.option('--group_filter', required=True, help='Twinsoft Group  regex pattern')
+@click.option('--group_filter', required=True, help='Twinsoft Group regex pattern')
 @click.option('--dest', required=False, help='Destination Folder in Twinsoft. If not provided, mirror group_filter pattern')
 @click.option('--loop', required=True, help='Loop number to ensure tags and groups are unique')
 @click.option('--offset', required=True, type=int, help='Address Offset to shift tags into')
@@ -132,6 +132,39 @@ def clone(ctx, tag_filter, group_filter, dest, loop, offset, replace_pattern,rec
             To LT_201 LT_215, TI_202, TIC_203 are in group CHAMBER 2 AND don't clone subfolders with address starting at 2500
 
             pass options --group_filter "CHAMBER 1" --loop 2  --offset 1500  --no-recurse      
+
+        Altenative Tag Pattern:
+            
+            Clone all tags in group CHAMBER 1 with tags starting at address 1000 
+
+            To LT_201 LT_215, TI_202, TIC_203 are in group CHAMBER 2 with address starting at 2500
+
+            pass options --group_filter "CHAMBER 1" --loop 2  --offset 1500  --tag_filter AT.+
+
+        Altenative Tag Pattern:
+            
+            Clone all tags in group CHAMBER 1 with tags starting with at address 1000 and igonore memory map conflicts between binaries and analogs
+
+            To LT_201 LT_215, TI_202, TIC_203 are in group CHAMBER 2 with address starting at 2500
+
+            pass options --group_filter "CHAMBER 1" --loop 2  --offset 1500  --tag_filter AT.+  --ignore_map_errors          
+
+
+        Altenative Tag Pattern:
+            
+            Clone all tags in group CHAMBER 1 with tags starting with at address 1000 and igonore missing memory map entries
+
+            To LT_201 LT_215, TI_202, TIC_203 are in group CHAMBER 2 with address starting at 2500
+
+            pass options --group_filter "CHAMBER 1" --loop 2  --offset 1500  --tag_filter AT.+  --blind_validation       
+
+        Altenative Tag Pattern:
+            
+            Clone all tags in group CHAMBER 1 with tags starting with at address 1000 and force setting group name to SPECIAL
+
+            To LT_201 LT_215, TI_202, TIC_203 are in group CHAMBER 2 with address starting at 2500
+
+            pass options --group_filter "CHAMBER 1" --loop 2  --offset 1500  --group_find "CHAMBER 1" --dest "SPECIAL"             
 
 
     '''
