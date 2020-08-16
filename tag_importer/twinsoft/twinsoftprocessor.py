@@ -2,8 +2,10 @@ import pandas as pd
 import logging
 import xml.etree.ElementTree as et
 import re
+import sys
 import numpy as np
 from datetime import datetime
+import verboselogs
 
 from helpers import ExcelProcessor
 from helpers import ExcelProcessorError
@@ -83,7 +85,7 @@ class TwinsoftProcessor:
 
     def __init__(self, xl_processor, twinsoft_tag_export_file, write_xml_file):
         self.xl_processor = xl_processor
-        self.__logger = logging.getLogger(__name__)
+        self.__logger = verboselogs.VerboseLogger(__name__)
         self.__twinsoft_tag_export_file = twinsoft_tag_export_file
         self.__twinsoft_tags_df = None
         self.__xl_memory_map_df = None
@@ -198,9 +200,9 @@ class TwinsoftProcessor:
 
             merged_df = pd.merge(self.__twinsoft_tags_df, self.xl_processor.memory_map_df, on=[
                 'MEM_ID'], how='left')
-            self.__logger.debug("Memory Map Merge Columns: {}()\n{}".format(
+            self.__logger.verbose("Memory Map Merge Columns: {}()\n{}".format(
                 self.load_twinsoft_xml.__name__, merged_df.columns))
-            self.__logger.debug("Memory Map Merge Data: {}()\n{}".format(
+            self.__logger.verbose("Memory Map Merge Data: {}()\n{}".format(
                 self.load_twinsoft_xml.__name__, merged_df[['Tag', 'TS_GROUP', 'TS_SIGNED', 'ModbusAddress', 'MEM_ID']]))
             t = merged_df[merged_df['MEM_TYPE'].isna()]
             if t.shape[0] > 0:
@@ -266,7 +268,7 @@ class TwinsoftProcessor:
                                                         'CONFLICT_GROUP': nrow['MEM_ID'], 'CONFLICT_FORMAT': nrow['MEM_TYPE'], 'CONFLICT_START_ADDR': int(nrow[
                                                             'START_ADDRESS']), 'CONFLICT_END_ADDR': int(nrow['END_ADDRESS'])
                                                         }, ignore_index=True)
-        if not ignore_errors:                                                            
+        if not ignore_errors:                                                          
             if err_df.shape[0] > 0:
                 raise TwinsoftError("Memory Map Conflict:\n{}\n".format(
                     err_df), TwinsoftError.TE_MEMORY_MAP_CONFLICT)
@@ -352,7 +354,7 @@ class TwinsoftProcessor:
             'Group'], right_on=['TS_GROUP'], how='left')
         x.drop(['CLASS', 'TAG_NAME',  'TAG_PATTERN',
                 'DESCRIPTION', 'TEMPLATE','ADDRESS','TAG_INITIAL_VALUE','TAG_TYPE'],  axis=1, inplace=True)
-        self.__logger.debug("{}()\n{}".format(
+        self.__logger.verbose("{}()\n{}".format(
             self.get_twinsoft_export_summary.__name__, x))
         if to_memory_map == True:
             x = self.__as_memory_map(x)
@@ -540,9 +542,9 @@ class TwinsoftProcessor:
         gen_tags_merged['CALC_ADDRESS'] = gen_tags_merged['CALC_ADDRESS'].astype(
             int)
 
-        self.__logger.debug("{}() - gen_tag_merged-dataframe\n{}".format(self.get_twinsoft_export_summary.__name__, gen_tags_merged[['Group', 'Format', 'Signed',  'MB_MIN', 'MB_MAX', 'TAG', 'TS_FORMAT',
+        self.__logger.verbose("{}() - gen_tag_merged-dataframe\n{}".format(self.get_twinsoft_export_summary.__name__, gen_tags_merged[['Group', 'Format', 'Signed',  'MB_MIN', 'MB_MAX', 'TAG', 'TS_FORMAT',
                                                                                                                                      'TS_SIGNED', 'START_ADDRESS', 'LENGTH', 'MEM_ID', 'MEM_TYPE', 'CALC_ADDRESS', 'CALC_INC', 'HAS_DATA']]))
-        self.__logger.debug("{}() - gen_tags_merged-data types\n{}".format(
+        self.__logger.verbose("{}() - gen_tags_merged-data types\n{}".format(
             self.get_twinsoft_export_summary.__name__, gen_tags_merged.dtypes))
 
         gen_tags_merged.rename(
@@ -602,7 +604,7 @@ class TwinsoftProcessor:
         exported_merged = pd.merge(self.__twinsoft_tags_df, pattern_df, left_on=[
             'Tag'], right_on=['TAG'])
 
-        # self.__logger.debug("{}() - exported_merged-dataframe\n{}".format(self.generate_tags.__name__,exported_merged[['Tag','TAG']]))
+        # self.__logger.verbose("{}() - exported_merged-dataframe\n{}".format(self.generate_tags.__name__,exported_merged[['Tag','TAG']]))
         errs = list(exported_merged['Tag'])
         if len(errs):
             raise TwinsoftError('Generated tags ' + str(errs) + ' for pattern ' + pattern +
@@ -650,7 +652,7 @@ class TwinsoftProcessor:
         clone_df = clone_df.astype({'TS_SIGNED': 'bool'}, copy=True)
         clone_df = pd.merge(clone_df, self.__xl_memory_map_df, left_on=[
             'MEM_ID', 'TS_FORMAT', 'TS_SIGNED'], right_on=['MEM_ID', 'TS_FORMAT', 'TS_SIGNED'], how='left')
-        self.__logger.debug("Clone df: {}()\n{}".format(self.clone.__name__, clone_df[[
+        self.__logger.verbose("Clone df: {}()\n{}".format(self.clone.__name__, clone_df[[
                             'TAG', 'CALC_ADDRESS', 'TS_FORMAT', 'TS_SIGNED', 'MEM_ID']]))
         if clone_df.shape[0] == 0:
             raise TwinsoftError("tag_filter: {0} and/or group_filter: {1} did not find anything to clone.\n".format(

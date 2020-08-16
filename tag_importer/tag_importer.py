@@ -4,7 +4,8 @@ import pandas as pd
 #import sys
 import logging
 import os
-
+import sys
+import verboselogs
 import click
 
 
@@ -14,7 +15,7 @@ from helpers import ExcelProcessor
 from helpers import ExcelProcessorError
 
 
-logger = logging.getLogger(__name__)
+logger = verboselogs.VerboseLogger(__name__) #logger = logging.getLogger(__name__)
 
 
 @click.group()
@@ -32,15 +33,13 @@ def main(ctx, excel, xmlin, xmlout, verbose):
     ctx.obj['excel_processor'] = ExcelProcessor(excel)
 
     ctx.obj['twinsoft_processor'] = TwinsoftProcessor(
-        ctx.obj['excel_processor'], xmlin, xmlout)
-
+        ctx.obj['excel_processor'], xmlin, xmlout)      
     if verbose:
-        logging.basicConfig(level=logging.DEBUG)
+        FORMAT = "[%(asctime)s %(levelname)s-%(filename)s %(funcName)s() ] %(message)s"
+        logging.basicConfig(level=verboselogs.VERBOSE, format=FORMAT)
     else:
         logging.basicConfig(
             format='%(asctime)s %(levelname)s- %(message)s', level=logging.INFO)
-        # logging.basicConfig(level=logging.INFO)
-
 
 @main.command()
 @click.option('--pattern', required=True, help='Generate Tags for a given TAG_PATTERN defined in excel TAGS tab')
@@ -89,10 +88,10 @@ def create(ctx, tag_filter, group_filter,recurse):
 @click.option('--offset', required=True, type=int, help='Address Offset to shift tags into')
 @click.option('--replace_pattern', required=False, help='Replacement filter regex pattern for tags and groups. Default: \\d')
 @click.option('--recurse/--no-recurse', default=True, help='Recurse Folder e.g. CHAMBER 1 and CHAMBER 1/SOFTS. default:--recurse')
-@click.option('--blind_validation/--no-blind_validation', default=False, help='Force Validation of cloned addresses against memory map')
+@click.option('--blind_validation/--no-blind_validation', default=False, help='ignore missing memory map entries')
 @click.option('--group_find', required=False, default=None, help='Find group_find and replace with group_replace')
 @click.option('--group_replace', required=False, default=None, help='Find group_find and replace with group_replace')
-@click.option('--ignore_map_errors/--no-ignore_map_errors', required=False, default=False, help='ignore mapping errors')
+@click.option('--ignore_map_errors/--no-ignore_map_errors', required=False, default=False, help='ignore overlaps in memory between binary and analogs')
 @click.pass_context
 def clone(ctx, tag_filter, group_filter, dest, loop, offset, replace_pattern,recurse,blind_validation,group_find,group_replace,ignore_map_errors):
     '''
@@ -220,7 +219,7 @@ if __name__ == '__main__':
     except ExcelProcessorError as e:
         logger.error(str(e))
     except TwinsoftError as e:
-        logger.error('{} Error Code: {}'. format(
+        logger.error('{} Error Code: {} '. format(
             str(e), str(e.extended_error)))
     #except pd.io.clipboard.PyperclipException as e:
     #    logger.warning("Clipboard not install in POSIX build. to_clipboard()" )
