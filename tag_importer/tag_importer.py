@@ -31,7 +31,7 @@ def main(ctx, excel, xmlin, xmlout, verbose):
     ctx.obj['xmlout'] = xmlout
     ctx.obj['verbose'] = verbose
     ctx.obj['excel_processor'] = ExcelProcessor(excel)
-
+    
     ctx.obj['twinsoft_processor'] = TwinsoftProcessor(
         ctx.obj['excel_processor'], xmlin, xmlout)      
     if verbose:
@@ -190,8 +190,9 @@ def clone(ctx, tag_filter, group_filter, dest, loop, offset, replace_pattern,rec
 @main.command()
 @click.argument('item')
 @click.option('--mapped/--no-mapped', default=False)
+@click.option('--root_tags/--no_root_tags', default=False)
 @click.pass_context
-def tabulate(ctx, item,mapped):
+def tabulate(ctx, item,mapped,root_tags):
     '''
     Tabulate input data and copy results to clipboard
 
@@ -212,7 +213,7 @@ def tabulate(ctx, item,mapped):
         else:
             log_message = 'Summarizing Twinsoft XML ' + ctx.obj['twinsoft_export']
 
-        x = ctx.obj['twinsoft_processor'].get_twinsoft_export_summary(mapped)
+        x = ctx.obj['twinsoft_processor'].get_twinsoft_export_summary(mapped,root_tags)
 
 
     elif item == 'map':

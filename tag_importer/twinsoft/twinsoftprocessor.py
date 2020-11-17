@@ -180,6 +180,7 @@ class TwinsoftProcessor:
         self.__twinsoft_tags_df = self.__twinsoft_export_to_df(
             root_key="Tag", root_attrib_key='Name')
 
+        #self.__twinsoft_tags_df = self.__twinsoft_tags_df.drop(self.__twinsoft_tags_df[self.__twinsoft_tags_df.TS_GROUP.isna()])
         self.__twinsoft_tags_df = self.__twinsoft_tags_df.astype(
             {'ModbusAddress': int}, copy=True)
         # A twinsoft group can belong to the same memory map entry. many to one
@@ -188,12 +189,12 @@ class TwinsoftProcessor:
         self.__twinsoft_tags_df = pd.merge(self.__twinsoft_tags_df, map_df, left_on=[
             'Group'], right_on=['TS_GROUP'], how='left')
         self.__twinsoft_tags_df.drop(
-            ['CLASS', 'TAG_NAME', 'TAG_PATTERN', 'DESCRIPTION', 'TEMPLATE'],  axis=1, inplace=True)
+            ['CLASS', 'TAG_NAME', 'TAG_PATTERN', 'DESCRIPTION', 'TEMPLATE'],  axis=1, inplace=True) 
 
         if validate == True:
             t = self.__twinsoft_tags_df[self.__twinsoft_tags_df['TS_GROUP'].isna(
             )]
-
+        
             if t.shape[0] > 0:
                 raise TwinsoftError('\nMissing MAP Entry for \n {}\n Review TAGS sheet and ensure that entry exists and is correct CLASS=MAP is correct.\n'.format(
                     t.drop_duplicates(['Group'])[['Group']]), TwinsoftError.TE_MAP_ENTRY_MISSING)
@@ -227,6 +228,7 @@ class TwinsoftProcessor:
         )
         subset_df = subset_df[subset_df['TAG_PATTERN'].notna()]
         dups = subset_df.duplicated(subset=['TAG_PATTERN'])
+
         if dups.any():
             raise TwinsoftError('Duplicate TAG_NATAG_PATTERNME defined in Sheet ' + ExcelProcessor.EXCEL_TAG_SHEET + ' in file ' + self.xl_processor.xl_file_name + '\n' + str(subset_df.loc[dups][[
                                 'CLASS', 'TAG_PATTERN']]) + '\n', TwinsoftError.TE_DUPLICATE_TAG_NAME)
@@ -325,13 +327,14 @@ class TwinsoftProcessor:
 
         return df
 
-    def get_twinsoft_export_summary(self, to_memory_map=False):
+    def get_twinsoft_export_summary(self, to_memory_map=False, root_tags=False):
         """
 
         """
-        if self.__twinsoft_tags_df['Group'].isnull().any():
-            raise TwinsoftError(
-                "One or more tags in Twinsoft are not part of group. Tags Must Belong to a GROUP for processing", TwinsoftError.TE_GROUP_EMPTY)
+        if not root_tags:
+            if self.__twinsoft_tags_df['Group'].isnull().any():
+                raise TwinsoftError(
+                    "One or more tags in Twinsoft are not part of group. Tags Must Belong to a GROUP for processing. Try --root_tags if root tags exist", TwinsoftError.TE_GROUP_EMPTY)
 
         x = self.__twinsoft_tags_df.groupby(['Group', 'Format', 'Signed']).agg({
             'ModbusAddress': ['min', 'max']})
@@ -378,10 +381,13 @@ class TwinsoftProcessor:
         else:
             ret += '<Signed />\n'
         ret += '<TextTagSize />\n'
-        if row['TS_FORMAT'] != 'DIGITAL':
+        if row['TS_FORMAT'] == 'TEXT':
+            ret += '<TextTagSize>' + str(row['TEXT_LEN']) + '</TextTagSize>'
+        elif row['TS_FORMAT'] != 'DIGITAL':
             ret += '<Minimum>' + '0' + '</Minimum>\n'
             ret += '<Maximum>' + '1000' + '</Maximum>\n'
             ret += '<Resolution>' + '' + '</Resolution>\n'
+       
         else:
             ret += '<Minimum />\n'
             ret += '<Maximum />\n'
@@ -530,20 +536,29 @@ class TwinsoftProcessor:
 
         gen_tags_merged.loc[(gen_tags_merged['MEM_TYPE'].isin(
             ['FLOAT', 'INT32', 'UINT32'])), 'CALC_ADDRESS'] = gen_tags_merged['CALC_ADDRESS'] * 2
+        gen_tags_merged.loc[(gen_tags_merged['MEM_TYPE'].isin(
+            ['TEXT'])), 'CALC_ADDRESS'] = gen_tags_merged['CALC_ADDRESS'] *  gen_tags_merged['TEXT_LEN']     
+          
         # gen_tags_merged['deleteme'] = gen_tags_merged['CALC_ADDRESS']
         gen_tags_merged['CALC_INC'] = 1
         gen_tags_merged.loc[(gen_tags_merged['MEM_TYPE'].isin(
+            ['TEXT'])), 'CALC_INC'] =  gen_tags_merged['TEXT_LEN']  
+        
+        gen_tags_merged.loc[(gen_tags_merged['MEM_TYPE'].isin(
             ['FLOAT', 'INT32', 'UINT32'])), 'CALC_INC'] = 2
+
         gen_tags_merged['CALC_ADDRESS'] = gen_tags_merged['CALC_ADDRESS'] + \
             np.where(gen_tags_merged['HAS_DATA'] == True,
                      gen_tags_merged['MB_MAX'] + gen_tags_merged['CALC_INC'], gen_tags_merged['START_ADDRESS'])
+
+
         # np.where(gen_tags_merged['TS_FORMAT'] in ['FLOAT', 'INT32', 'UINT32'], 2, 1)
 
         gen_tags_merged['CALC_ADDRESS'] = gen_tags_merged['CALC_ADDRESS'].astype(
             int)
 
         self.__logger.verbose("{}() - gen_tag_merged-dataframe\n{}".format(self.get_twinsoft_export_summary.__name__, gen_tags_merged[['Group', 'Format', 'Signed',  'MB_MIN', 'MB_MAX', 'TAG', 'TS_FORMAT',
-                                                                                                                                     'TS_SIGNED', 'START_ADDRESS', 'LENGTH', 'MEM_ID', 'MEM_TYPE', 'CALC_ADDRESS', 'CALC_INC', 'HAS_DATA']]))
+                                                                                                                                     'TS_SIGNED', 'START_ADDRESS', 'LENGTH', 'MEM_ID', 'MEM_TYPE','CALC_ADDRESS', 'CALC_INC', 'HAS_DATA']]))
         self.__logger.verbose("{}() - gen_tags_merged-data types\n{}".format(
             self.get_twinsoft_export_summary.__name__, gen_tags_merged.dtypes))
 
